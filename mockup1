@@ -1,0 +1,96 @@
+import GraphicSVG exposing (..)
+
+main = gameApp Tick { model = init, view = view, update = update }
+
+
+myCircle = profilePerson
+
+profilePerson = group [circle 10
+                         |> filled red,
+                -- Main body
+                curve (0,0) [Pull (5,10) (10,0)]
+                |> filled blue
+                |> move (-5,-8),
+                -- Head
+                circle 4
+                |> filled blue
+                |> move (0,0),
+                -- Left Side
+                circle 2
+                |> filled blue
+                |> move (0,-8.1),
+                circle 2
+                |> filled blue
+                |> move (-1,-7.9),
+                circle 2
+                |> filled blue
+                |> move (-2,-7.8),
+                circle 1
+                |> filled blue
+                |> move (-3.8,-8.1),
+                circle 0.5
+                |> filled blue
+                |> move (-4.5,-8.1),
+                circle 0.3
+                |> filled blue
+                |> move (-4.9,-8.4),
+                circle 0.3
+                |> filled blue
+                |> move (-4.7,-8.6),
+                circle 0.5
+                |> filled blue
+                |> move (-3.5,-8.8),
+                -- Right Side
+                circle 2
+                |> filled blue
+                |> move (0,-8.1),
+                circle 2
+                |> filled blue
+                |> move (1,-7.9),
+                circle 2
+                |> filled blue
+                |> move (2,-7.8),
+                circle 1
+                |> filled blue
+                |> move (3.8,-8.1),
+                circle 0.5
+                |> filled blue
+                |> move (4.5,-8.1),
+                circle 0.3
+                |> filled blue
+                |> move (4.9,-8.4),
+                circle 0.3
+                |> filled blue
+                |> move (4.7,-8.6),
+                circle 0.5
+                |> filled blue
+                |> move (3.5,-8.8)                   
+                ]
+
+view model = collage 250 128 (myShapes model)
+myShapes model = model = [profilePerson
+           , myCircle
+               |> move (0,30)
+               |> move (0, (2 * sin model.time))
+           , myCircle
+               |> move (0,-30)
+           , myCircle
+               |> move (26,15)
+           , myCircle
+               |> move (26,-15)
+           , myCircle
+               |> move (-26,15)
+           , myCircle
+               |> move (-26,-15)
+           , graphPaper 10 |> makeTransparent 0.4
+           ]
+                -- END OF MODEL
+                
+-- THE TYPE OF MESSAGE, 
+--EITHER MOVE THE SLIDER OR PRESS THE SUBMIT BUTTON
+type Msg = Tick Float GetKeyState
+
+update msg model = case msg of
+                     Tick t _ -> { time = t }
+
+init = { time = 0 }
