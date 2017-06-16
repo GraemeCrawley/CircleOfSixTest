@@ -6,9 +6,51 @@ main = gameApp Tick { model = init, view = view, update = update }
 
 -- MODEL
 
-type State = Start | TopNoteFadingIn | TopNoteFadingOut | RightTopNoteFadingIn | RightTopNoteFadingOut | StationaryNoNote | StationaryTopNote | StationaryRightTopNote
+type State = Start 
+            | StationaryNoNote 
+            | StationaryTopNote 
+            | TopNoteFadingIn 
+            | TopNoteFadingOut 
+            | StationaryRightTopNote 
+            | RightTopNoteFadingIn 
+            | RightTopNoteFadingOut 
+            | StationaryRightBottomNote 
+            | RightBottomNoteFadingIn 
+            | RightBottomNoteFadingOut 
+            | StationaryBottomNote 
+            | BottomNoteFadingIn 
+            | BottomNoteFadingOut 
+            | StationaryLeftBottomNote 
+            | LeftBottomNoteFadingIn 
+            | LeftBottomNoteFadingOut 
+            | StationaryLeftTopNote 
+            | LeftTopNoteFadingIn 
+            | LeftTopNoteFadingOut
 
-init = { time = 0, state = StationaryNoNote, topNoteTransparency = 0, rightTopNoteTransparency = 0, aniTimeFade = 0, aniTimeExpand = 0, spiralTheta = 0, circleOfSixX = 0, circleOfSixY = 0, rightTopNoteX = 1000, rightTopNoteY = 1000, topNoteX = 1000, topNoteY = 1000 }
+init = { time = 0
+        , state = StationaryNoNote
+        , topNoteTransparency = 0
+        , rightTopNoteTransparency = 0
+        , rightBottomNoteTransparency = 0
+        , bottomNoteTransparency = 0
+        , leftBottomNoteTransparency = 0
+        , leftTopNoteTransparency = 0
+        , aniTimeFade = 0
+        , spiralTheta = 0
+        , circleOfSixX = 0
+        , circleOfSixY = 0
+        , topNoteX = 1000
+        , topNoteY = 1000
+        , rightTopNoteX = 1000
+        , rightTopNoteY = 1000
+        , rightBottomNoteX = 1000
+        , rightBottomNoteY = 1000
+        , bottomNoteX = 1000
+        , bottomNoteY = 1000
+        , leftBottomNoteX = 1000
+        , leftBottomNoteY = 1000
+        , leftTopNoteX = 1000
+        , leftTopNoteY = 1000 }
 
 update msg model = case msg of
                     Tick t _     -> { model | time = t 
@@ -17,10 +59,22 @@ update msg model = case msg of
                                                     TopNoteFadingOut -> model.aniTimeFade + 0.05
                                                     RightTopNoteFadingIn -> model.aniTimeFade + 0.05
                                                     RightTopNoteFadingOut -> model.aniTimeFade + 0.05
+                                                    RightBottomNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    RightBottomNoteFadingOut -> model.aniTimeFade + 0.05
+                                                    BottomNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    BottomNoteFadingOut -> model.aniTimeFade + 0.05
+                                                    LeftBottomNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    LeftBottomNoteFadingOut -> model.aniTimeFade + 0.05
+                                                    LeftTopNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    LeftTopNoteFadingOut -> model.aniTimeFade + 0.05
                                                     _ -> 0
                                         , state = updateState model
                                         , topNoteTransparency = updateTopNoteTransparency model
                                         , rightTopNoteTransparency = updateRightTopNoteTransparency model
+                                        , rightBottomNoteTransparency = updateRightBottomNoteTransparency model
+                                        , bottomNoteTransparency = updateBottomNoteTransparency model
+                                        , leftBottomNoteTransparency = updateLeftBottomNoteTransparency model
+                                        , leftTopNoteTransparency = updateLeftTopNoteTransparency model
                                         , topNoteX = case model.state of
                                                     TopNoteFadingIn -> 0
                                                     TopNoteFadingOut -> 0
@@ -41,6 +95,46 @@ update msg model = case msg of
                                                     RightTopNoteFadingOut -> 0
                                                     StationaryRightTopNote -> 0
                                                     _ -> 1000
+                                        , rightBottomNoteX = case model.state of
+                                                    RightBottomNoteFadingIn -> 0
+                                                    RightBottomNoteFadingOut -> 0
+                                                    StationaryRightBottomNote -> 0
+                                                    _ -> 1000
+                                        , rightBottomNoteY = case model.state of
+                                                    RightBottomNoteFadingIn -> 0
+                                                    RightBottomNoteFadingOut -> 0
+                                                    StationaryRightBottomNote -> 0
+                                                    _ -> 1000
+                                        , bottomNoteX = case model.state of
+                                                    BottomNoteFadingIn -> 0
+                                                    BottomNoteFadingOut -> 0
+                                                    StationaryBottomNote -> 0
+                                                    _ -> 1000
+                                        , bottomNoteY = case model.state of
+                                                    BottomNoteFadingIn -> 0
+                                                    BottomNoteFadingOut -> 0
+                                                    StationaryBottomNote -> 0
+                                                    _ -> 1000
+                                        , leftBottomNoteX = case model.state of
+                                                    LeftBottomNoteFadingIn -> 0
+                                                    LeftBottomNoteFadingOut -> 0
+                                                    StationaryLeftBottomNote -> 0
+                                                    _ -> 1000
+                                        , leftBottomNoteY = case model.state of
+                                                    LeftBottomNoteFadingIn -> 0
+                                                    LeftBottomNoteFadingOut -> 0
+                                                    StationaryLeftBottomNote -> 0
+                                                    _ -> 1000
+                                        , leftTopNoteX = case model.state of
+                                                    LeftTopNoteFadingIn -> 0
+                                                    LeftTopNoteFadingOut -> 0
+                                                    StationaryLeftTopNote -> 0
+                                                    _ -> 1000
+                                        , leftTopNoteY = case model.state of
+                                                    LeftTopNoteFadingIn -> 0
+                                                    LeftTopNoteFadingOut -> 0
+                                                    StationaryLeftTopNote -> 0
+                                                    _ -> 1000
 
                                         {- UNECESSARY FOR NOW
                                         --, circleOfSixX = updateExpandingContactsX model
@@ -51,9 +145,25 @@ update msg model = case msg of
                                     }
                     ButtonPressRightTop -> { model | state = buttonPressRightTop model.state 
                                     }
+                    ButtonPressRightBottom -> { model | state = buttonPressRightBottom model.state 
+                                    }
+                    ButtonPressBottom -> { model | state = buttonPressBottom model.state 
+                                    }
+                    ButtonPressLeftBottom -> { model | state = buttonPressLeftBottom model.state 
+                                    }
+                    ButtonPressLeftTop -> { model | state = buttonPressLeftTop model.state 
+                                    }
                     XPressTop -> { model | state = xPressTop model.state 
                                     }
                     XPressRightTop -> { model | state = xPressRightTop model.state 
+                                    }
+                    XPressRightBottom -> { model | state = xPressRightBottom model.state 
+                                    }
+                    XPressBottom -> { model | state = xPressBottom model.state 
+                                    }
+                    XPressLeftBottom -> { model | state = xPressLeftBottom model.state 
+                                    }
+                    XPressLeftTop -> { model | state = xPressLeftTop model.state 
                                     }
 
 
@@ -70,8 +180,36 @@ updateState model = case model.state of
                         RightTopNoteFadingOut -> if model.aniTimeFade >= 0.4
                                     then StationaryNoNote
                                     else RightTopNoteFadingOut
+                        RightBottomNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryRightBottomNote
+                                    else RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> if model.aniTimeFade >= 0.4
+                                    then StationaryNoNote
+                                    else RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryBottomNote
+                                    else BottomNoteFadingIn
+                        BottomNoteFadingOut -> if model.aniTimeFade >= 0.4
+                                    then StationaryNoNote
+                                    else BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryLeftBottomNote
+                                    else LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> if model.aniTimeFade >= 0.4
+                                    then StationaryNoNote
+                                    else LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryLeftTopNote
+                                    else LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> if model.aniTimeFade >= 0.4
+                                    then StationaryNoNote
+                                    else LeftTopNoteFadingOut
                         StationaryTopNote -> StationaryTopNote
                         StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
                         StationaryNoNote -> StationaryNoNote
                         Start -> Start
 
@@ -84,9 +222,28 @@ updateTopNoteTransparency model = case model.state of
 updateRightTopNoteTransparency model = case model.state of
                         RightTopNoteFadingIn -> model.rightTopNoteTransparency + 0.1
                         RightTopNoteFadingOut -> model.rightTopNoteTransparency - 0.1
-
                         _ -> model.rightTopNoteTransparency
 
+updateRightBottomNoteTransparency model = case model.state of
+                        RightBottomNoteFadingIn -> model.rightBottomNoteTransparency + 0.1
+                        RightBottomNoteFadingOut -> model.rightBottomNoteTransparency - 0.1
+                        _ -> model.rightBottomNoteTransparency
+
+updateBottomNoteTransparency model = case model.state of
+                        BottomNoteFadingIn -> model.bottomNoteTransparency + 0.1
+                        BottomNoteFadingOut -> model.bottomNoteTransparency - 0.1
+                        _ -> model.bottomNoteTransparency
+
+updateLeftBottomNoteTransparency model = case model.state of
+                        LeftBottomNoteFadingIn -> model.leftBottomNoteTransparency + 0.1
+                        LeftBottomNoteFadingOut -> model.leftBottomNoteTransparency - 0.1
+                        _ -> model.leftBottomNoteTransparency
+
+
+updateLeftTopNoteTransparency model = case model.state of
+                        LeftTopNoteFadingIn -> model.leftTopNoteTransparency + 0.1
+                        LeftTopNoteFadingOut -> model.leftTopNoteTransparency - 0.1
+                        _ -> model.leftTopNoteTransparency
 
 {- UNNECESSARY FOR NOW
 updateExpandingContactsX model = case model.state of
@@ -108,6 +265,15 @@ type Msg = Tick Float GetKeyState
         | XPressTop
         | ButtonPressRightTop
         | XPressRightTop
+        | ButtonPressRightBottom
+        | XPressRightBottom
+        | ButtonPressBottom
+        | XPressBottom
+        | ButtonPressLeftBottom
+        | XPressLeftBottom
+        | ButtonPressLeftTop
+        | XPressLeftTop
+
 
 buttonPressTop oldState = case oldState of
                         Start -> Start
@@ -116,8 +282,20 @@ buttonPressTop oldState = case oldState of
                         TopNoteFadingOut -> TopNoteFadingOut
                         RightTopNoteFadingIn -> RightTopNoteFadingIn
                         RightTopNoteFadingOut -> RightTopNoteFadingOut
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
                         StationaryTopNote -> TopNoteFadingOut
                         StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
 
 buttonPressRightTop oldState = case oldState of
                         Start -> Start
@@ -126,31 +304,242 @@ buttonPressRightTop oldState = case oldState of
                         RightTopNoteFadingOut -> RightTopNoteFadingOut
                         TopNoteFadingIn -> TopNoteFadingIn
                         TopNoteFadingOut -> TopNoteFadingOut
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
                         StationaryRightTopNote -> RightTopNoteFadingOut
                         StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
+   
+
+buttonPressRightBottom oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> RightBottomNoteFadingIn  
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> RightBottomNoteFadingOut
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote                     
+
+buttonPressBottom oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> BottomNoteFadingIn  
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> BottomNoteFadingOut
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
+
+buttonPressLeftBottom oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> LeftBottomNoteFadingIn  
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> LeftBottomNoteFadingOut
+                        StationaryLeftTopNote -> StationaryLeftTopNote
+
+buttonPressLeftTop oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> LeftTopNoteFadingIn  
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> LeftTopNoteFadingOut
 
 xPressTop oldState = case oldState of
                         Start -> Start
-                        StationaryTopNote -> TopNoteFadingOut
-                        StationaryRightTopNote -> StationaryRightTopNote
-                        TopNoteFadingOut -> TopNoteFadingOut
+                        StationaryNoNote -> StationaryNoNote
                         TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
                         RightTopNoteFadingIn -> RightTopNoteFadingIn
                         RightTopNoteFadingOut -> RightTopNoteFadingOut
-                        StationaryNoNote -> StationaryNoNote
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryTopNote -> TopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
 
 xPressRightTop oldState = case oldState of
                         Start -> Start
+                        StationaryNoNote -> StationaryNoNote
+                        RightTopNoteFadingIn -> RightTopNoteFadingIn
+                        RightTopNoteFadingOut -> RightTopNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
                         StationaryRightTopNote -> RightTopNoteFadingOut
                         StationaryTopNote -> StationaryTopNote
-                        RightTopNoteFadingOut -> RightTopNoteFadingOut
-                        RightTopNoteFadingIn -> RightTopNoteFadingIn
-                        TopNoteFadingOut -> TopNoteFadingOut
-                        TopNoteFadingIn -> TopNoteFadingIn
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
+
+xPressRightBottom oldState = case oldState of
+                        Start -> Start
                         StationaryNoNote -> StationaryNoNote
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> RightBottomNoteFadingOut
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote 
 
+xPressBottom oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> StationaryNoNote
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> BottomNoteFadingOut
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> StationaryLeftTopNote
 
+xPressLeftBottom oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> StationaryNoNote
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> LeftBottomNoteFadingOut
+                        StationaryLeftTopNote -> StationaryLeftTopNote
 
+xPressLeftTop oldState = case oldState of
+                        Start -> Start
+                        StationaryNoNote -> StationaryNoNote
+                        RightBottomNoteFadingIn -> RightBottomNoteFadingIn
+                        RightBottomNoteFadingOut -> RightBottomNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightBottomNoteFadingIn
+                        RightTopNoteFadingOut -> RightBottomNoteFadingOut
+                        BottomNoteFadingIn -> BottomNoteFadingIn
+                        BottomNoteFadingOut -> BottomNoteFadingOut
+                        LeftBottomNoteFadingIn -> LeftBottomNoteFadingIn
+                        LeftBottomNoteFadingOut -> LeftBottomNoteFadingOut
+                        LeftTopNoteFadingIn -> LeftTopNoteFadingIn
+                        LeftTopNoteFadingOut -> LeftTopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightBottomNote -> StationaryRightBottomNote
+                        StationaryBottomNote -> StationaryBottomNote
+                        StationaryLeftBottomNote -> StationaryLeftBottomNote
+                        StationaryLeftTopNote -> LeftTopNoteFadingOut
+                        
 -- VIEW
 
 view model = collage 250 128 (myShapes model)
@@ -232,8 +621,11 @@ myShapes model = [-- BACKGROUND
                     |> filled backgroundPerson
                 , face3
                 , myCircleOutline
+                    |> makeTransparent model.rightBottomNoteTransparency
+                    
                     
             ]
+                |> notifyTap ButtonPressRightBottom
                 |> move (26,(-15-20))
                 |> scale (max(sin (model.time-timeShift*2)*enlargedSize) scaledSize)
             -- Bottom
@@ -242,28 +634,37 @@ myShapes model = [-- BACKGROUND
                     |> filled backgroundPerson
                 , face4
                 , myCircleOutline
+                    |> makeTransparent model.bottomNoteTransparency
+                    
                     
             ]
+                |> notifyTap ButtonPressBottom
                 |> move (0,(-30-20))
                 |> scale (max(sin (model.time-timeShift*3)*enlargedSize) scaledSize)
-            -- Left Top
+            -- Left Bottom
            , group [
                 circle 11
                     |> filled backgroundPerson
                 , face1
                 , myCircleOutline
+                    |> makeTransparent model.leftBottomNoteTransparency
+                    
                     
             ]
+                |> notifyTap ButtonPressLeftBottom
                 |> move (-26,(-15-20))
                 |> scale (max(sin (model.time-timeShift*4)*enlargedSize) scaledSize)
-            -- Left Bottom
+            -- Left Top
            , group [
                 circle 11
                     |> filled backgroundPerson
                 , face2
                 , myCircleOutline
+                    |> makeTransparent model.leftTopNoteTransparency
+                    
                     
             ]
+                |> notifyTap ButtonPressLeftTop
                 |> move (-26,(15-20))
                 |> scale (max(sin (model.time-timeShift*5)*enlargedSize) scaledSize)
            -- Top Note
@@ -298,6 +699,70 @@ myShapes model = [-- BACKGROUND
                 ]
                     |> makeTransparent model.rightTopNoteTransparency
                     |> move (model.rightTopNoteX, model.rightTopNoteY)
+            -- Right Bottom Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text3
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressRightBottom
+                ]
+                    |> makeTransparent model.rightBottomNoteTransparency
+                    |> move (model.rightBottomNoteX, model.rightBottomNoteY)
+            -- Bottom Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text4
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressBottom
+                ]
+                    |> makeTransparent model.bottomNoteTransparency
+                    |> move (model.bottomNoteX, model.bottomNoteY)
+            -- Left Bottom Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text5
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressLeftBottom
+                ]
+                    |> makeTransparent model.leftBottomNoteTransparency
+                    |> move (model.leftBottomNoteX, model.leftBottomNoteY)
+            -- Left Top Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text6
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressLeftTop
+                ]
+                    |> makeTransparent model.leftTopNoteTransparency
+                    |> move (model.leftTopNoteX, model.leftTopNoteY)
             , text ("Animation Time " ++ (stringOfAniTime model.aniTimeFade))
                 |> filled black
                 |> move (30, -50)
@@ -310,6 +775,10 @@ positive x = if x > 0 then x else 0
 
 text1 = "hello1"
 text2 = "hello2"
+text3 = "hello3"
+text4 = "hello4"
+text5 = "hello5"
+text6 = "hello6"
 
 profilePerson = myCircle
 
