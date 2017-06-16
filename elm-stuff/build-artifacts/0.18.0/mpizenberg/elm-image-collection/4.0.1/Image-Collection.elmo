@@ -1,0 +1,22 @@
+var _mpizenberg$elm_image_collection$Image_Collection$view = F3(
+	function (attributes, itemViewer, collection) {
+		return A2(
+			_elm_lang$html$Html$div,
+			attributes,
+			_elm_lang$core$Dict$values(
+				A2(_elm_lang$core$Dict$map, itemViewer, collection)));
+	});
+var _mpizenberg$elm_image_collection$Image_Collection$defaultItemViewer = function (key) {
+	return _mpizenberg$elm_image_collection$Image$viewImg(
+		{ctor: '[]'});
+};
+var _mpizenberg$elm_image_collection$Image_Collection$resize = F2(
+	function (size, collection) {
+		return A2(
+			_elm_lang$core$Dict$map,
+			F2(
+				function (key, image) {
+					return A2(_mpizenberg$elm_image_collection$Image$resize, size, image);
+				}),
+			collection);
+	});

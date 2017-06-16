@@ -127,8 +127,24 @@ stringOfAniTime x = Basics.toString x
 contactPoint1 = 3
 speedOfSpiral ani = if ani < contactPoint1 then 1/(1+Basics.e^((-1)*ani))
                         else 1/(1+Basics.e^((-1)*contactPoint1))
+n = 2
+x2 = 0
+y2 = 0
+x1 = -30
+y1 = -50
+aFinal = 50
+aInitial theta = a
+a = Basics.sqrt((x2-x1)^2 + (y2-y1)^2)
+b theta = (aFinal - (aInitial theta))/2*Basics.pi*n
 
-inverseTheta x = 50/x
+radius theta = (a + (b theta)*theta)
+
+circleX xOrderNumber ani theta = (radius theta)*sin(theta)+x2
+circleY yOrderNumber ani theta = (radius theta)*cos(theta)+y2
+
+
+
+{-inverseTheta x = 50/x
 a = 10
 b = 1
 circleX x ani theta = if ani < 1.1 then 30
@@ -140,7 +156,7 @@ circleY y ani theta = if ani < 1.1 then 50
                     else ((a+b*(inverseTheta theta))*sin((speedOfSpiral ani)*theta))
                     --else if ani < 5 then ((10+1*(inverseAni ani))*sin(ani*0.1*ani))
                         --else ((10+1*(inverseAni ani))*sin(ani))
-
+-}
 {-OLD
 circleX x ani = if ani < 1.7 then (cos (ani+1.5))*10
                     else if ani < 3.2 then (sin (ani))*10-20

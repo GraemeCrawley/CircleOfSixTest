@@ -1,0 +1,2676 @@
+var _user$project$Main$hair2c = A3(_user$project$GraphicSVG$rgb, 40, 40, 40);
+var _user$project$Main$pinkie = A4(_user$project$GraphicSVG$rgba, 255, 158, 158, 0.2);
+var _user$project$Main$highlights = A3(_user$project$GraphicSVG$rgb, 89, 40, 0);
+var _user$project$Main$brown1 = A3(_user$project$GraphicSVG$rgb, 61, 27, 0);
+var _user$project$Main$redhair2 = A3(_user$project$GraphicSVG$rgb, 60, 0, 0);
+var _user$project$Main$redhair = A3(_user$project$GraphicSVG$rgb, 67, 0, 0);
+var _user$project$Main$lbrown = A3(_user$project$GraphicSVG$rgb, 79, 56, 3);
+var _user$project$Main$lips = A3(_user$project$GraphicSVG$rgb, 150, 18, 18);
+var _user$project$Main$skin16 = A3(_user$project$GraphicSVG$rgb, 62, 43, 19);
+var _user$project$Main$skin15 = A3(_user$project$GraphicSVG$rgb, 88, 53, 18);
+var _user$project$Main$skin14 = A3(_user$project$GraphicSVG$rgb, 137, 78, 26);
+var _user$project$Main$skin13 = A3(_user$project$GraphicSVG$rgb, 126, 77, 28);
+var _user$project$Main$skin12 = A3(_user$project$GraphicSVG$rgb, 124, 80, 26);
+var _user$project$Main$skin11 = A3(_user$project$GraphicSVG$rgb, 135, 97, 39);
+var _user$project$Main$skin10 = A3(_user$project$GraphicSVG$rgb, 146, 106, 45);
+var _user$project$Main$skin9 = A3(_user$project$GraphicSVG$rgb, 130, 72, 24);
+var _user$project$Main$skin8 = A3(_user$project$GraphicSVG$rgb, 198, 120, 86);
+var _user$project$Main$skin7 = A3(_user$project$GraphicSVG$rgb, 186, 108, 73);
+var _user$project$Main$skin6 = A3(_user$project$GraphicSVG$rgb, 219, 144, 101);
+var _user$project$Main$skin5 = A3(_user$project$GraphicSVG$rgb, 231, 158, 109);
+var _user$project$Main$skin4 = A3(_user$project$GraphicSVG$rgb, 229, 184, 143);
+var _user$project$Main$skin3 = A3(_user$project$GraphicSVG$rgb, 225, 170, 100);
+var _user$project$Main$skin2 = A3(_user$project$GraphicSVG$rgb, 238, 206, 179);
+var _user$project$Main$skin1 = A3(_user$project$GraphicSVG$rgb, 255, 223, 196);
+var _user$project$Main$skin = _user$project$Main$skin10;
+var _user$project$Main$freckles = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$Main$brown1,
+			_user$project$GraphicSVG$circle(1.3)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -4, _1: -4},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$Main$brown1,
+					_user$project$GraphicSVG$circle(1.3))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 4, _1: -4},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$Main$brown1,
+						_user$project$GraphicSVG$circle(1.3))),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Main$hair4b = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: 0, _1: 55},
+			A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$GraphicSVG$black,
+				A2(_user$project$GraphicSVG$oval, 154, 74))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$rotate,
+				_elm_lang$core$Basics$degrees(-40),
+				A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 55, _1: 40},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						A2(_user$project$GraphicSVG$oval, 54, 74)))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$rotate,
+					_elm_lang$core$Basics$degrees(40),
+					A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: -55, _1: 40},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$GraphicSVG$black,
+							A2(_user$project$GraphicSVG$oval, 54, 74)))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 40, _1: -15},
+						A2(
+							_user$project$GraphicSVG$rotate,
+							_elm_lang$core$Basics$degrees(5),
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 74, 184)))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$rotate,
+							_elm_lang$core$Basics$degrees(5),
+							A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 80, _1: 10},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 44, 74)))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: -40, _1: -15},
+								A2(
+									_user$project$GraphicSVG$rotate,
+									_elm_lang$core$Basics$degrees(-5),
+									A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$GraphicSVG$black,
+										A2(_user$project$GraphicSVG$oval, 74, 184)))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$rotate,
+									_elm_lang$core$Basics$degrees(-5),
+									A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: -80, _1: 10},
+										A2(
+											_user$project$GraphicSVG$filled,
+											_user$project$GraphicSVG$black,
+											A2(_user$project$GraphicSVG$oval, 44, 74)))),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: -50, _1: 0},
+										A2(
+											_user$project$GraphicSVG$rotate,
+											_elm_lang$core$Basics$degrees(-25),
+											A2(
+												_user$project$GraphicSVG$filled,
+												_user$project$GraphicSVG$black,
+												A2(_user$project$GraphicSVG$oval, 74, 184)))),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$move,
+											{ctor: '_Tuple2', _0: 50, _1: 0},
+											A2(
+												_user$project$GraphicSVG$rotate,
+												_elm_lang$core$Basics$degrees(25),
+												A2(
+													_user$project$GraphicSVG$filled,
+													_user$project$GraphicSVG$black,
+													A2(_user$project$GraphicSVG$oval, 74, 184)))),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: 55},
+												A2(
+													_user$project$GraphicSVG$filled,
+													_user$project$Main$redhair,
+													A2(_user$project$GraphicSVG$oval, 150, 70))),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: 50, _1: 0},
+													A2(
+														_user$project$GraphicSVG$rotate,
+														_elm_lang$core$Basics$degrees(25),
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$Main$redhair,
+															A2(_user$project$GraphicSVG$oval, 70, 180)))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 40, _1: -15},
+														A2(
+															_user$project$GraphicSVG$rotate,
+															_elm_lang$core$Basics$degrees(5),
+															A2(
+																_user$project$GraphicSVG$filled,
+																_user$project$Main$redhair,
+																A2(_user$project$GraphicSVG$oval, 70, 180)))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$rotate,
+															_elm_lang$core$Basics$degrees(-5),
+															A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -80, _1: 10},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$Main$redhair,
+																	A2(_user$project$GraphicSVG$oval, 40, 70)))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -50, _1: 0},
+																A2(
+																	_user$project$GraphicSVG$rotate,
+																	_elm_lang$core$Basics$degrees(-25),
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$Main$redhair,
+																		A2(_user$project$GraphicSVG$oval, 70, 180)))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: -40, _1: -15},
+																	A2(
+																		_user$project$GraphicSVG$rotate,
+																		_elm_lang$core$Basics$degrees(-5),
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$Main$redhair,
+																			A2(_user$project$GraphicSVG$oval, 70, 180)))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$rotate,
+																		_elm_lang$core$Basics$degrees(-40),
+																		A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 55, _1: 40},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$Main$redhair,
+																				A2(_user$project$GraphicSVG$oval, 50, 70)))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$rotate,
+																			_elm_lang$core$Basics$degrees(40),
+																			A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: -55, _1: 40},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					_user$project$Main$redhair,
+																					A2(_user$project$GraphicSVG$oval, 50, 70)))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$rotate,
+																				_elm_lang$core$Basics$degrees(5),
+																				A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 80, _1: 10},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$Main$redhair,
+																						A2(_user$project$GraphicSVG$oval, 40, 70)))),
+																			_1: {ctor: '[]'}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$hair4f = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: -20, _1: -15},
+			A2(
+				_user$project$GraphicSVG$rotate,
+				_elm_lang$core$Basics$degrees(-65),
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$GraphicSVG$black,
+					A2(_user$project$GraphicSVG$oval, 60, 95)))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: 27, _1: 0},
+				A2(
+					_user$project$GraphicSVG$rotate,
+					_elm_lang$core$Basics$degrees(60),
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						A2(_user$project$GraphicSVG$oval, 20, 30)))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -20, _1: -13},
+					A2(
+						_user$project$GraphicSVG$rotate,
+						_elm_lang$core$Basics$degrees(-65),
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$Main$redhair,
+							A2(_user$project$GraphicSVG$oval, 60, 95)))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 27, _1: 2},
+						A2(
+							_user$project$GraphicSVG$rotate,
+							_elm_lang$core$Basics$degrees(60),
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$Main$redhair,
+								A2(_user$project$GraphicSVG$oval, 20, 30)))),
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	});
+var _user$project$Main$bangsl = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$scale,
+			1.6,
+			A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -75, _1: -65},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$Main$brown1,
+					A2(
+						_user$project$GraphicSVG$curve,
+						{ctor: '_Tuple2', _0: 0, _1: 0},
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$Pull,
+								{ctor: '_Tuple2', _0: 10, _1: 50},
+								{ctor: '_Tuple2', _0: 40, _1: 50}),
+							_1: {ctor: '[]'}
+						})))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$scale,
+				1.6,
+				A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -75, _1: -65},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$Main$brown1,
+						A2(
+							_user$project$GraphicSVG$curve,
+							{ctor: '_Tuple2', _0: 0, _1: 0},
+							{
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$Pull,
+									{ctor: '_Tuple2', _0: 50, _1: 10},
+									{ctor: '_Tuple2', _0: 40, _1: 50}),
+								_1: {ctor: '[]'}
+							})))),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Main$hair3b = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: 0, _1: -50},
+			A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$Main$brown1,
+				A3(_user$project$GraphicSVG$roundedRect, 145, 140, 30))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -60, _1: -30},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$Main$highlights,
+					A2(_user$project$GraphicSVG$rect, 2, 140))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -50, _1: -40},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$Main$highlights,
+						A2(_user$project$GraphicSVG$rect, 2, 150))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: -30, _1: -40},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$Main$highlights,
+							A2(_user$project$GraphicSVG$rect, 2, 150))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 60, _1: -30},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$Main$highlights,
+								A2(_user$project$GraphicSVG$rect, 2, 140))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 50, _1: -40},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$highlights,
+									A2(_user$project$GraphicSVG$rect, 2, 150))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: 30, _1: -40},
+									A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$highlights,
+										A2(_user$project$GraphicSVG$rect, 2, 150))),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 0, _1: -50},
+										A2(
+											_user$project$GraphicSVG$filled,
+											_user$project$GraphicSVG$white,
+											A2(_user$project$GraphicSVG$rect, 30, 150))),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$hair3f = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: 11, _1: 10},
+			A2(_user$project$GraphicSVG$scale, 1.2, _user$project$Main$bangsl)),
+		_1: {
+			ctor: '::',
+			_0: _user$project$GraphicSVG$mirrorX(
+				A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -12, _1: 10},
+					A2(_user$project$GraphicSVG$scale, 1.2, _user$project$Main$bangsl))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 0, _1: 23.2},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$Main$brown1,
+						_user$project$GraphicSVG$circle(5))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$scale,
+						1.6,
+						A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: -75, _1: -65},
+							A3(
+								_user$project$GraphicSVG$outlined,
+								_user$project$GraphicSVG$solid(1),
+								_user$project$Main$highlights,
+								A2(
+									_user$project$GraphicSVG$curve,
+									{ctor: '_Tuple2', _0: 0, _1: 0},
+									{
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$Pull,
+											{ctor: '_Tuple2', _0: 50, _1: 10},
+											{ctor: '_Tuple2', _0: 40, _1: 50}),
+										_1: {ctor: '[]'}
+									})))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$scale,
+							1.3,
+							A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: -72, _1: -55},
+								A3(
+									_user$project$GraphicSVG$outlined,
+									_user$project$GraphicSVG$solid(1),
+									_user$project$Main$highlights,
+									A2(
+										_user$project$GraphicSVG$curve,
+										{ctor: '_Tuple2', _0: 0, _1: 0},
+										{
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$Pull,
+												{ctor: '_Tuple2', _0: 40, _1: 10},
+												{ctor: '_Tuple2', _0: 40, _1: 50}),
+											_1: {ctor: '[]'}
+										})))),
+						_1: {
+							ctor: '::',
+							_0: _user$project$GraphicSVG$mirrorX(
+								A2(
+									_user$project$GraphicSVG$scale,
+									1.6,
+									A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 75, _1: -65},
+										A3(
+											_user$project$GraphicSVG$outlined,
+											_user$project$GraphicSVG$solid(1),
+											_user$project$Main$highlights,
+											A2(
+												_user$project$GraphicSVG$curve,
+												{ctor: '_Tuple2', _0: 0, _1: 0},
+												{
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$Pull,
+														{ctor: '_Tuple2', _0: 50, _1: 10},
+														{ctor: '_Tuple2', _0: 40, _1: 50}),
+													_1: {ctor: '[]'}
+												}))))),
+							_1: {
+								ctor: '::',
+								_0: _user$project$GraphicSVG$mirrorX(
+									A2(
+										_user$project$GraphicSVG$scale,
+										1.3,
+										A2(
+											_user$project$GraphicSVG$move,
+											{ctor: '_Tuple2', _0: 72, _1: -55},
+											A3(
+												_user$project$GraphicSVG$outlined,
+												_user$project$GraphicSVG$solid(1),
+												_user$project$Main$highlights,
+												A2(
+													_user$project$GraphicSVG$curve,
+													{ctor: '_Tuple2', _0: 0, _1: 0},
+													{
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$Pull,
+															{ctor: '_Tuple2', _0: 40, _1: 10},
+															{ctor: '_Tuple2', _0: 40, _1: 50}),
+														_1: {ctor: '[]'}
+													}))))),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$hair2b = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: -70, _1: -50},
+			A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$GraphicSVG$black,
+				A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -70, _1: -50},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$Main$hair2c,
+					A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -55, _1: -65},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: -55, _1: -65},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$Main$hair2c,
+							A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 70, _1: -50},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 70, _1: -50},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$hair2c,
+									A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: 55, _1: -65},
+									A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$GraphicSVG$black,
+										A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10))),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 55, _1: -65},
+										A2(
+											_user$project$GraphicSVG$filled,
+											_user$project$Main$hair2c,
+											A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10))),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$rotate,
+											_elm_lang$core$Basics$degrees(-5),
+											A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: -38, _1: -75},
+												A2(
+													_user$project$GraphicSVG$filled,
+													_user$project$GraphicSVG$black,
+													A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10)))),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$rotate,
+												_elm_lang$core$Basics$degrees(-5),
+												A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -38, _1: -75},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$Main$hair2c,
+														A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10)))),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$rotate,
+													_elm_lang$core$Basics$degrees(5),
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 38, _1: -75},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$black,
+															A3(_user$project$GraphicSVG$roundedRect, 18, 75, 10)))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$rotate,
+														_elm_lang$core$Basics$degrees(5),
+														A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: 38, _1: -75},
+															A2(
+																_user$project$GraphicSVG$filled,
+																_user$project$Main$hair2c,
+																A3(_user$project$GraphicSVG$roundedRect, 13, 70, 10)))),
+													_1: {ctor: '[]'}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$hair2f = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$rotate,
+			_elm_lang$core$Basics$degrees(60),
+			A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -70, _1: -35},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$GraphicSVG$black,
+					A2(_user$project$GraphicSVG$oval, 17, 27)))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$rotate,
+				_elm_lang$core$Basics$degrees(-60),
+				A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 70, _1: -35},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						A2(_user$project$GraphicSVG$oval, 17, 27)))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$rotate,
+					_elm_lang$core$Basics$degrees(60),
+					A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: -70, _1: -35},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$Main$hair2c,
+							A2(_user$project$GraphicSVG$oval, 12, 22)))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$rotate,
+						_elm_lang$core$Basics$degrees(-60),
+						A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 70, _1: -35},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$Main$hair2c,
+								A2(_user$project$GraphicSVG$oval, 12, 22)))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$rotate,
+							_elm_lang$core$Basics$degrees(-60),
+							A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 65, _1: -25},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 20, 30)))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$rotate,
+								_elm_lang$core$Basics$degrees(-60),
+								A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: 65, _1: -25},
+									A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$hair2c,
+										A2(_user$project$GraphicSVG$oval, 15, 25)))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$rotate,
+									_elm_lang$core$Basics$degrees(60),
+									A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: -65, _1: -25},
+										A2(
+											_user$project$GraphicSVG$filled,
+											_user$project$GraphicSVG$black,
+											A2(_user$project$GraphicSVG$oval, 20, 30)))),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$rotate,
+										_elm_lang$core$Basics$degrees(60),
+										A2(
+											_user$project$GraphicSVG$move,
+											{ctor: '_Tuple2', _0: -65, _1: -25},
+											A2(
+												_user$project$GraphicSVG$filled,
+												_user$project$Main$hair2c,
+												A2(_user$project$GraphicSVG$oval, 15, 25)))),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$rotate,
+											_elm_lang$core$Basics$degrees(50),
+											A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: -55, _1: -15},
+												A2(
+													_user$project$GraphicSVG$filled,
+													_user$project$GraphicSVG$black,
+													A2(_user$project$GraphicSVG$oval, 20, 35)))),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$rotate,
+												_elm_lang$core$Basics$degrees(50),
+												A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -55, _1: -15},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$Main$hair2c,
+														A2(_user$project$GraphicSVG$oval, 15, 30)))),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$rotate,
+													_elm_lang$core$Basics$degrees(40),
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -45, _1: -5},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$black,
+															A2(_user$project$GraphicSVG$oval, 20, 35)))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$rotate,
+														_elm_lang$core$Basics$degrees(40),
+														A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: -45, _1: -5},
+															A2(
+																_user$project$GraphicSVG$filled,
+																_user$project$Main$hair2c,
+																A2(_user$project$GraphicSVG$oval, 15, 30)))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$rotate,
+															_elm_lang$core$Basics$degrees(130),
+															A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: 55, _1: -15},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$GraphicSVG$black,
+																	A2(_user$project$GraphicSVG$oval, 20, 35)))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$rotate,
+																_elm_lang$core$Basics$degrees(130),
+																A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: 55, _1: -15},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$Main$hair2c,
+																		A2(_user$project$GraphicSVG$oval, 15, 30)))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$rotate,
+																	_elm_lang$core$Basics$degrees(-40),
+																	A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 45, _1: -5},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$GraphicSVG$black,
+																			A2(_user$project$GraphicSVG$oval, 20, 35)))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$rotate,
+																		_elm_lang$core$Basics$degrees(-40),
+																		A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 45, _1: -5},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$Main$hair2c,
+																				A2(_user$project$GraphicSVG$oval, 15, 30)))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$rotate,
+																			_elm_lang$core$Basics$degrees(160),
+																			A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 30, _1: 0},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					_user$project$GraphicSVG$black,
+																					A2(_user$project$GraphicSVG$oval, 20, 40)))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$rotate,
+																				_elm_lang$core$Basics$degrees(160),
+																				A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 30, _1: 0},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$Main$hair2c,
+																						A2(_user$project$GraphicSVG$oval, 15, 35)))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$rotate,
+																					_elm_lang$core$Basics$degrees(20),
+																					A2(
+																						_user$project$GraphicSVG$move,
+																						{ctor: '_Tuple2', _0: -30, _1: 0},
+																						A2(
+																							_user$project$GraphicSVG$filled,
+																							_user$project$GraphicSVG$black,
+																							A2(_user$project$GraphicSVG$oval, 20, 40)))),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$GraphicSVG$rotate,
+																						_elm_lang$core$Basics$degrees(20),
+																						A2(
+																							_user$project$GraphicSVG$move,
+																							{ctor: '_Tuple2', _0: -30, _1: 0},
+																							A2(
+																								_user$project$GraphicSVG$filled,
+																								_user$project$Main$hair2c,
+																								A2(_user$project$GraphicSVG$oval, 15, 35)))),
+																					_1: {
+																						ctor: '::',
+																						_0: A2(
+																							_user$project$GraphicSVG$rotate,
+																							_elm_lang$core$Basics$degrees(15),
+																							A2(
+																								_user$project$GraphicSVG$move,
+																								{ctor: '_Tuple2', _0: -15, _1: 5},
+																								A2(
+																									_user$project$GraphicSVG$filled,
+																									_user$project$GraphicSVG$black,
+																									A2(_user$project$GraphicSVG$oval, 20, 40)))),
+																						_1: {
+																							ctor: '::',
+																							_0: A2(
+																								_user$project$GraphicSVG$rotate,
+																								_elm_lang$core$Basics$degrees(15),
+																								A2(
+																									_user$project$GraphicSVG$move,
+																									{ctor: '_Tuple2', _0: -15, _1: 5},
+																									A2(
+																										_user$project$GraphicSVG$filled,
+																										_user$project$Main$hair2c,
+																										A2(_user$project$GraphicSVG$oval, 15, 35)))),
+																							_1: {
+																								ctor: '::',
+																								_0: A2(
+																									_user$project$GraphicSVG$rotate,
+																									_elm_lang$core$Basics$degrees(-15),
+																									A2(
+																										_user$project$GraphicSVG$move,
+																										{ctor: '_Tuple2', _0: 15, _1: 5},
+																										A2(
+																											_user$project$GraphicSVG$filled,
+																											_user$project$GraphicSVG$black,
+																											A2(_user$project$GraphicSVG$oval, 20, 40)))),
+																								_1: {
+																									ctor: '::',
+																									_0: A2(
+																										_user$project$GraphicSVG$rotate,
+																										_elm_lang$core$Basics$degrees(-15),
+																										A2(
+																											_user$project$GraphicSVG$move,
+																											{ctor: '_Tuple2', _0: 15, _1: 5},
+																											A2(
+																												_user$project$GraphicSVG$filled,
+																												_user$project$Main$hair2c,
+																												A2(_user$project$GraphicSVG$oval, 15, 35)))),
+																									_1: {
+																										ctor: '::',
+																										_0: A2(
+																											_user$project$GraphicSVG$move,
+																											{ctor: '_Tuple2', _0: 0, _1: 7},
+																											A2(
+																												_user$project$GraphicSVG$filled,
+																												_user$project$GraphicSVG$black,
+																												A2(_user$project$GraphicSVG$oval, 23, 43))),
+																										_1: {
+																											ctor: '::',
+																											_0: A2(
+																												_user$project$GraphicSVG$move,
+																												{ctor: '_Tuple2', _0: 0, _1: 7},
+																												A2(
+																													_user$project$GraphicSVG$filled,
+																													_user$project$Main$hair2c,
+																													A2(_user$project$GraphicSVG$oval, 18, 38))),
+																											_1: {ctor: '[]'}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$hair1b = _user$project$GraphicSVG$group(
+	{ctor: '[]'});
+var _user$project$Main$hair1f = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$move,
+			{ctor: '_Tuple2', _0: 0, _1: 5},
+			A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$GraphicSVG$black,
+				A2(_user$project$GraphicSVG$oval, 60, 40))),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$rotate,
+				_elm_lang$core$Basics$degrees(20),
+				A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -30, _1: 0},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						A2(_user$project$GraphicSVG$oval, 60, 40)))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$rotate,
+					_elm_lang$core$Basics$degrees(160),
+					A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 30, _1: 0},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$GraphicSVG$black,
+							A2(_user$project$GraphicSVG$oval, 60, 40)))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$rotate,
+						_elm_lang$core$Basics$degrees(130),
+						A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 55, _1: -15},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 55, 35)))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$rotate,
+							_elm_lang$core$Basics$degrees(50),
+							A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: -55, _1: -15},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 55, 35)))),
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$blush = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$Main$pinkie,
+			_user$project$GraphicSVG$circle(15)),
+		_1: {ctor: '[]'}
+	});
+var _user$project$Main$eyebrow = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$GraphicSVG$black,
+			A2(_user$project$GraphicSVG$oval, 37, 4)),
+		_1: {ctor: '[]'}
+	});
+var _user$project$Main$ear = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$GraphicSVG$black,
+			A2(_user$project$GraphicSVG$oval, 24, 44)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$Main$skin,
+				A2(_user$project$GraphicSVG$oval, 20, 40)),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Main$faceScale = 8.0e-2;
+var _user$project$Main$face1 = A2(
+	_user$project$GraphicSVG$scale,
+	_user$project$Main$faceScale,
+	_user$project$GraphicSVG$group(
+		{
+			ctor: '::',
+			_0: _user$project$Main$hair4b,
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -70, _1: 0},
+					_user$project$GraphicSVG$group(
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 24, 44)),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin8,
+									A2(_user$project$GraphicSVG$oval, 20, 40)),
+								_1: {ctor: '[]'}
+							}
+						})),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 70, _1: 0},
+						_user$project$GraphicSVG$group(
+							{
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 24, 44)),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$skin8,
+										A2(_user$project$GraphicSVG$oval, 20, 40)),
+									_1: {ctor: '[]'}
+								}
+							})),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 0, _1: -7},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 143, 156))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 0, _1: -7},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin8,
+									A2(_user$project$GraphicSVG$oval, 140, 153))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: -40, _1: -20},
+									_user$project$Main$freckles),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 40, _1: -20},
+										_user$project$Main$freckles),
+									_1: {
+										ctor: '::',
+										_0: _user$project$GraphicSVG$group(
+											{
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -27, _1: 0},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$GraphicSVG$black,
+														_user$project$GraphicSVG$circle(20))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -27, _1: 0},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$white,
+															_user$project$GraphicSVG$circle(18))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: -24, _1: 0},
+															A2(
+																_user$project$GraphicSVG$filled,
+																A3(_user$project$GraphicSVG$rgb, 75, 114, 72),
+																_user$project$GraphicSVG$circle(15))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -21, _1: 2},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$GraphicSVG$black,
+																	_user$project$GraphicSVG$circle(12))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: -18, _1: 3},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$GraphicSVG$white,
+																		_user$project$GraphicSVG$circle(6))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 27, _1: 0},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$GraphicSVG$black,
+																			_user$project$GraphicSVG$circle(20))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 27, _1: 0},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$GraphicSVG$white,
+																				_user$project$GraphicSVG$circle(18))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 30, _1: 0},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					A3(_user$project$GraphicSVG$rgb, 75, 114, 72),
+																					_user$project$GraphicSVG$circle(15))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 32, _1: 2},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$GraphicSVG$black,
+																						_user$project$GraphicSVG$circle(12))),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$GraphicSVG$move,
+																						{ctor: '_Tuple2', _0: 35, _1: 3},
+																						A2(
+																							_user$project$GraphicSVG$filled,
+																							_user$project$GraphicSVG$white,
+																							_user$project$GraphicSVG$circle(6))),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: 60},
+												_user$project$Main$hair4f),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$scale,
+													0.4,
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 0, _1: -40},
+														A3(
+															_user$project$GraphicSVG$outlined,
+															_user$project$GraphicSVG$solid(3),
+															_user$project$GraphicSVG$red,
+															A2(
+																_user$project$GraphicSVG$curve,
+																{ctor: '_Tuple2', _0: -50, _1: -20},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$Pull,
+																		{ctor: '_Tuple2', _0: 0, _1: -40},
+																		{ctor: '_Tuple2', _0: 50, _1: -20}),
+																	_1: {ctor: '[]'}
+																})))),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}));
+var _user$project$Main$face2 = A2(
+	_user$project$GraphicSVG$scale,
+	_user$project$Main$faceScale,
+	_user$project$GraphicSVG$group(
+		{
+			ctor: '::',
+			_0: _user$project$Main$hair3b,
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -70, _1: 0},
+					_user$project$GraphicSVG$group(
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 24, 44)),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin3,
+									A2(_user$project$GraphicSVG$oval, 20, 40)),
+								_1: {ctor: '[]'}
+							}
+						})),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 70, _1: 0},
+						_user$project$GraphicSVG$group(
+							{
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 24, 44)),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$skin3,
+										A2(_user$project$GraphicSVG$oval, 20, 40)),
+									_1: {ctor: '[]'}
+								}
+							})),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 0, _1: -7},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 143, 156))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 0, _1: -7},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin3,
+									A2(_user$project$GraphicSVG$oval, 140, 153))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: -40, _1: -20},
+									_user$project$Main$freckles),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 40, _1: -20},
+										_user$project$Main$freckles),
+									_1: {
+										ctor: '::',
+										_0: _user$project$GraphicSVG$group(
+											{
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -27, _1: 0},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$GraphicSVG$black,
+														_user$project$GraphicSVG$circle(20))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -27, _1: 0},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$white,
+															_user$project$GraphicSVG$circle(18))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: -24, _1: 0},
+															A2(
+																_user$project$GraphicSVG$filled,
+																A3(_user$project$GraphicSVG$rgb, 161, 202, 241),
+																_user$project$GraphicSVG$circle(15))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -21, _1: 2},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$GraphicSVG$black,
+																	_user$project$GraphicSVG$circle(12))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: -18, _1: 3},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$GraphicSVG$white,
+																		_user$project$GraphicSVG$circle(6))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 27, _1: 0},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$GraphicSVG$black,
+																			_user$project$GraphicSVG$circle(20))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 27, _1: 0},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$GraphicSVG$white,
+																				_user$project$GraphicSVG$circle(18))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 30, _1: 0},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					A3(_user$project$GraphicSVG$rgb, 161, 202, 241),
+																					_user$project$GraphicSVG$circle(15))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 32, _1: 2},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$GraphicSVG$black,
+																						_user$project$GraphicSVG$circle(12))),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$GraphicSVG$move,
+																						{ctor: '_Tuple2', _0: 35, _1: 3},
+																						A2(
+																							_user$project$GraphicSVG$filled,
+																							_user$project$GraphicSVG$white,
+																							_user$project$GraphicSVG$circle(6))),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: 60},
+												_user$project$Main$hair3f),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$scale,
+													0.4,
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 0, _1: -40},
+														A3(
+															_user$project$GraphicSVG$outlined,
+															_user$project$GraphicSVG$solid(3),
+															_user$project$GraphicSVG$red,
+															A2(
+																_user$project$GraphicSVG$curve,
+																{ctor: '_Tuple2', _0: -50, _1: -20},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$Pull,
+																		{ctor: '_Tuple2', _0: 0, _1: -40},
+																		{ctor: '_Tuple2', _0: 50, _1: -20}),
+																	_1: {ctor: '[]'}
+																})))),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}));
+var _user$project$Main$face3 = A2(
+	_user$project$GraphicSVG$scale,
+	_user$project$Main$faceScale,
+	_user$project$GraphicSVG$group(
+		{
+			ctor: '::',
+			_0: _user$project$Main$hair2b,
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -70, _1: 0},
+					_user$project$GraphicSVG$group(
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 24, 44)),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin9,
+									A2(_user$project$GraphicSVG$oval, 20, 40)),
+								_1: {ctor: '[]'}
+							}
+						})),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 70, _1: 0},
+						_user$project$GraphicSVG$group(
+							{
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 24, 44)),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$skin9,
+										A2(_user$project$GraphicSVG$oval, 20, 40)),
+									_1: {ctor: '[]'}
+								}
+							})),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 0, _1: -7},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 143, 156))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 0, _1: -7},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin9,
+									A2(_user$project$GraphicSVG$oval, 140, 153))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: -40, _1: -20},
+									_user$project$Main$freckles),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 40, _1: -20},
+										_user$project$Main$freckles),
+									_1: {
+										ctor: '::',
+										_0: _user$project$GraphicSVG$group(
+											{
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -27, _1: 0},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$GraphicSVG$black,
+														_user$project$GraphicSVG$circle(20))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -27, _1: 0},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$white,
+															_user$project$GraphicSVG$circle(18))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: -24, _1: 0},
+															A2(
+																_user$project$GraphicSVG$filled,
+																A3(_user$project$GraphicSVG$rgb, 75, 114, 72),
+																_user$project$GraphicSVG$circle(15))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -21, _1: 2},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$GraphicSVG$black,
+																	_user$project$GraphicSVG$circle(12))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: -18, _1: 3},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$GraphicSVG$white,
+																		_user$project$GraphicSVG$circle(6))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 27, _1: 0},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$GraphicSVG$black,
+																			_user$project$GraphicSVG$circle(20))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 27, _1: 0},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$GraphicSVG$white,
+																				_user$project$GraphicSVG$circle(18))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 30, _1: 0},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					A3(_user$project$GraphicSVG$rgb, 75, 114, 72),
+																					_user$project$GraphicSVG$circle(15))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 32, _1: 2},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$GraphicSVG$black,
+																						_user$project$GraphicSVG$circle(12))),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$GraphicSVG$move,
+																						{ctor: '_Tuple2', _0: 35, _1: 3},
+																						A2(
+																							_user$project$GraphicSVG$filled,
+																							_user$project$GraphicSVG$white,
+																							_user$project$GraphicSVG$circle(6))),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: 60},
+												_user$project$Main$hair2f),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$scale,
+													0.4,
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 0, _1: -40},
+														A3(
+															_user$project$GraphicSVG$outlined,
+															_user$project$GraphicSVG$solid(3),
+															_user$project$GraphicSVG$red,
+															A2(
+																_user$project$GraphicSVG$curve,
+																{ctor: '_Tuple2', _0: -50, _1: -20},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$Pull,
+																		{ctor: '_Tuple2', _0: 0, _1: -40},
+																		{ctor: '_Tuple2', _0: 50, _1: -20}),
+																	_1: {ctor: '[]'}
+																})))),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}));
+var _user$project$Main$face4 = A2(
+	_user$project$GraphicSVG$scale,
+	_user$project$Main$faceScale,
+	_user$project$GraphicSVG$group(
+		{
+			ctor: '::',
+			_0: _user$project$Main$hair1b,
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: -70, _1: 0},
+					_user$project$GraphicSVG$group(
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 24, 44)),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin7,
+									A2(_user$project$GraphicSVG$oval, 20, 40)),
+								_1: {ctor: '[]'}
+							}
+						})),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 70, _1: 0},
+						_user$project$GraphicSVG$group(
+							{
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$GraphicSVG$black,
+									A2(_user$project$GraphicSVG$oval, 24, 44)),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$skin7,
+										A2(_user$project$GraphicSVG$oval, 20, 40)),
+									_1: {ctor: '[]'}
+								}
+							})),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 0, _1: -7},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								A2(_user$project$GraphicSVG$oval, 143, 156))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: 0, _1: -7},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$skin7,
+									A2(_user$project$GraphicSVG$oval, 140, 153))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: -40, _1: -20},
+									_user$project$Main$freckles),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 40, _1: -20},
+										_user$project$Main$freckles),
+									_1: {
+										ctor: '::',
+										_0: _user$project$GraphicSVG$group(
+											{
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -27, _1: 0},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$GraphicSVG$black,
+														_user$project$GraphicSVG$circle(20))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -27, _1: 0},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$GraphicSVG$white,
+															_user$project$GraphicSVG$circle(18))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: -24, _1: 0},
+															A2(
+																_user$project$GraphicSVG$filled,
+																A3(_user$project$GraphicSVG$rgb, 79, 56, 3),
+																_user$project$GraphicSVG$circle(15))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -21, _1: 2},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$GraphicSVG$black,
+																	_user$project$GraphicSVG$circle(12))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: -18, _1: 3},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$GraphicSVG$white,
+																		_user$project$GraphicSVG$circle(6))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 27, _1: 0},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$GraphicSVG$black,
+																			_user$project$GraphicSVG$circle(20))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 27, _1: 0},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$GraphicSVG$white,
+																				_user$project$GraphicSVG$circle(18))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 30, _1: 0},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					A3(_user$project$GraphicSVG$rgb, 79, 56, 3),
+																					_user$project$GraphicSVG$circle(15))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 32, _1: 2},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$GraphicSVG$black,
+																						_user$project$GraphicSVG$circle(12))),
+																				_1: {
+																					ctor: '::',
+																					_0: A2(
+																						_user$project$GraphicSVG$move,
+																						{ctor: '_Tuple2', _0: 35, _1: 3},
+																						A2(
+																							_user$project$GraphicSVG$filled,
+																							_user$project$GraphicSVG$white,
+																							_user$project$GraphicSVG$circle(6))),
+																					_1: {ctor: '[]'}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: 60},
+												_user$project$Main$hair1f),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$scale,
+													0.4,
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 0, _1: -40},
+														A3(
+															_user$project$GraphicSVG$outlined,
+															_user$project$GraphicSVG$solid(3),
+															_user$project$GraphicSVG$red,
+															A2(
+																_user$project$GraphicSVG$curve,
+																{ctor: '_Tuple2', _0: -50, _1: -20},
+																{
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$Pull,
+																		{ctor: '_Tuple2', _0: 0, _1: -40},
+																		{ctor: '_Tuple2', _0: 50, _1: -20}),
+																	_1: {ctor: '[]'}
+																})))),
+												_1: {ctor: '[]'}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}));
+var _user$project$Main$noteColour = A3(_user$project$GraphicSVG$rgb, 250, 166, 106);
+var _user$project$Main$contactPersonColour = A3(_user$project$GraphicSVG$rgb, 67, 157, 145);
+var _user$project$Main$backgroundPerson = A3(_user$project$GraphicSVG$rgb, 200, 80, 75);
+var _user$project$Main$myCircle = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$Main$backgroundPerson,
+			_user$project$GraphicSVG$circle(10)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -5, _1: -8},
+				A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$Main$contactPersonColour,
+					A2(
+						_user$project$GraphicSVG$curve,
+						{ctor: '_Tuple2', _0: 0, _1: 0},
+						{
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$Pull,
+								{ctor: '_Tuple2', _0: 5, _1: 10},
+								{ctor: '_Tuple2', _0: 10, _1: 0}),
+							_1: {ctor: '[]'}
+						}))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 0, _1: 0},
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$Main$contactPersonColour,
+						_user$project$GraphicSVG$circle(4))),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 0, _1: -8.1},
+						A2(
+							_user$project$GraphicSVG$filled,
+							_user$project$Main$contactPersonColour,
+							_user$project$GraphicSVG$circle(2))),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: -1, _1: -7.9},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$Main$contactPersonColour,
+								_user$project$GraphicSVG$circle(2))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$move,
+								{ctor: '_Tuple2', _0: -2, _1: -7.8},
+								A2(
+									_user$project$GraphicSVG$filled,
+									_user$project$Main$contactPersonColour,
+									_user$project$GraphicSVG$circle(2))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: -3.8, _1: -8.1},
+									A2(
+										_user$project$GraphicSVG$filled,
+										_user$project$Main$contactPersonColour,
+										_user$project$GraphicSVG$circle(1))),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: -4.5, _1: -8.1},
+										A2(
+											_user$project$GraphicSVG$filled,
+											_user$project$Main$contactPersonColour,
+											_user$project$GraphicSVG$circle(0.5))),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$move,
+											{ctor: '_Tuple2', _0: -4.9, _1: -8.4},
+											A2(
+												_user$project$GraphicSVG$filled,
+												_user$project$Main$contactPersonColour,
+												_user$project$GraphicSVG$circle(0.3))),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: -4.7, _1: -8.6},
+												A2(
+													_user$project$GraphicSVG$filled,
+													_user$project$Main$contactPersonColour,
+													_user$project$GraphicSVG$circle(0.3))),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -3.5, _1: -8.8},
+													A2(
+														_user$project$GraphicSVG$filled,
+														_user$project$Main$contactPersonColour,
+														_user$project$GraphicSVG$circle(0.5))),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: 0, _1: -8.1},
+														A2(
+															_user$project$GraphicSVG$filled,
+															_user$project$Main$contactPersonColour,
+															_user$project$GraphicSVG$circle(2))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: 1, _1: -7.9},
+															A2(
+																_user$project$GraphicSVG$filled,
+																_user$project$Main$contactPersonColour,
+																_user$project$GraphicSVG$circle(2))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: 2, _1: -7.8},
+																A2(
+																	_user$project$GraphicSVG$filled,
+																	_user$project$Main$contactPersonColour,
+																	_user$project$GraphicSVG$circle(2))),
+															_1: {
+																ctor: '::',
+																_0: A2(
+																	_user$project$GraphicSVG$move,
+																	{ctor: '_Tuple2', _0: 3.8, _1: -8.1},
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$Main$contactPersonColour,
+																		_user$project$GraphicSVG$circle(1))),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 4.5, _1: -8.1},
+																		A2(
+																			_user$project$GraphicSVG$filled,
+																			_user$project$Main$contactPersonColour,
+																			_user$project$GraphicSVG$circle(0.5))),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_user$project$GraphicSVG$move,
+																			{ctor: '_Tuple2', _0: 4.9, _1: -8.4},
+																			A2(
+																				_user$project$GraphicSVG$filled,
+																				_user$project$Main$contactPersonColour,
+																				_user$project$GraphicSVG$circle(0.3))),
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_user$project$GraphicSVG$move,
+																				{ctor: '_Tuple2', _0: 4.7, _1: -8.6},
+																				A2(
+																					_user$project$GraphicSVG$filled,
+																					_user$project$Main$contactPersonColour,
+																					_user$project$GraphicSVG$circle(0.3))),
+																			_1: {
+																				ctor: '::',
+																				_0: A2(
+																					_user$project$GraphicSVG$move,
+																					{ctor: '_Tuple2', _0: 3.5, _1: -8.8},
+																					A2(
+																						_user$project$GraphicSVG$filled,
+																						_user$project$Main$contactPersonColour,
+																						_user$project$GraphicSVG$circle(0.5))),
+																				_1: {ctor: '[]'}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	});
+var _user$project$Main$closeBoxSymbol = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$Main$noteColour,
+			_user$project$GraphicSVG$circle(3)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$filled,
+				_user$project$GraphicSVG$black,
+				A2(_user$project$GraphicSVG$rect, 1, 5)),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$filled,
+					_user$project$GraphicSVG$black,
+					A2(_user$project$GraphicSVG$rect, 5, 1)),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Main$textBox1 = _user$project$GraphicSVG$group(
+	{
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$GraphicSVG$yellow,
+			A3(_user$project$GraphicSVG$roundedRect, 80, 20, 5)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$move,
+				{ctor: '_Tuple2', _0: -35, _1: 0},
+				A2(
+					_user$project$GraphicSVG$scale,
+					0.45,
+					A2(
+						_user$project$GraphicSVG$filled,
+						_user$project$GraphicSVG$black,
+						_user$project$GraphicSVG$text('Journal Entry:')))),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$move,
+					{ctor: '_Tuple2', _0: 35, _1: 5},
+					A2(
+						_user$project$GraphicSVG$rotate,
+						_elm_lang$core$Basics$degrees(45),
+						_user$project$Main$closeBoxSymbol)),
+				_1: {ctor: '[]'}
+			}
+		}
+	});
+var _user$project$Main$profilePerson = _user$project$Main$myCircle;
+var _user$project$Main$text1 = 'hello1';
+var _user$project$Main$positive = function (x) {
+	return (_elm_lang$core$Native_Utils.cmp(x, 0) > 0) ? x : 0;
+};
+var _user$project$Main$circleY = F2(
+	function (y, ani) {
+		return (_elm_lang$core$Native_Utils.cmp(ani, 1.7) < 0) ? (_elm_lang$core$Basics$sin(ani + 1.5) * 10) : ((_elm_lang$core$Native_Utils.cmp(ani, 3.2) < 0) ? ((_elm_lang$core$Basics$cos(ani) * 10) + 1) : ((_elm_lang$core$Native_Utils.cmp(ani, 10) < 0) ? ((_elm_lang$core$Basics$sin(ani - 1.5) * 10) - 20) : ((_elm_lang$core$Basics$sin(10 - 1.5) * 10) - 20)));
+	});
+var _user$project$Main$circleX = F2(
+	function (x, ani) {
+		return (_elm_lang$core$Native_Utils.cmp(ani, 1.7) < 0) ? (_elm_lang$core$Basics$cos(ani + 1.5) * 10) : ((_elm_lang$core$Native_Utils.cmp(ani, 3.2) < 0) ? ((_elm_lang$core$Basics$sin(ani) * 10) - 20) : ((_elm_lang$core$Native_Utils.cmp(ani, 10) < 0) ? ((_elm_lang$core$Basics$cos(ani - 1.5) * 10) - 20) : ((_elm_lang$core$Basics$cos(10 - 1.5) * 10) - 20)));
+	});
+var _user$project$Main$b = 1;
+var _user$project$Main$a = 10;
+var _user$project$Main$inverseTheta = function (x) {
+	return 50 / x;
+};
+var _user$project$Main$contactPoint1 = 3;
+var _user$project$Main$speedOfSpiral = function (ani) {
+	return (_elm_lang$core$Native_Utils.cmp(ani, _user$project$Main$contactPoint1) < 0) ? (1 / (1 + Math.pow(_elm_lang$core$Basics$e, -1 * ani))) : (1 / (1 + Math.pow(_elm_lang$core$Basics$e, -1 * _user$project$Main$contactPoint1)));
+};
+var _user$project$Main$stringOfAniTime = function (x) {
+	return _elm_lang$core$Basics$toString(x);
+};
+var _user$project$Main$enlargedSize = 1.05;
+var _user$project$Main$timeShift = 0.1;
+var _user$project$Main$scaledSize = 1;
+var _user$project$Main$updateNoteTransparency = function (model) {
+	var _p0 = model.state;
+	switch (_p0.ctor) {
+		case 'NoteFadingIn':
+			return model.noteTransparency + 0.1;
+		case 'NoteFadingOut':
+			return model.noteTransparency - 0.1;
+		default:
+			return model.noteTransparency;
+	}
+};
+var _user$project$Main$StationaryWithNote = {ctor: 'StationaryWithNote'};
+var _user$project$Main$StationaryNoNote = {ctor: 'StationaryNoNote'};
+var _user$project$Main$init = {time: 0, state: _user$project$Main$StationaryNoNote, noteTransparency: 0, aniTimeFade: 0, aniTimeExpand: 0, spiralTheta: 0, circleOfSixX: 0, circleOfSixY: 0};
+var _user$project$Main$NoteFadingOut = {ctor: 'NoteFadingOut'};
+var _user$project$Main$NoteFadingIn = {ctor: 'NoteFadingIn'};
+var _user$project$Main$ExpandingContacts = {ctor: 'ExpandingContacts'};
+var _user$project$Main$contactsPress = function (oldState) {
+	var _p1 = oldState;
+	switch (_p1.ctor) {
+		case 'Start':
+			return _user$project$Main$ExpandingContacts;
+		case 'ExpandingContacts':
+			return _user$project$Main$ExpandingContacts;
+		case 'StationaryWithNote':
+			return _user$project$Main$StationaryWithNote;
+		case 'NoteFadingOut':
+			return _user$project$Main$NoteFadingOut;
+		case 'NoteFadingIn':
+			return _user$project$Main$NoteFadingIn;
+		default:
+			return _user$project$Main$StationaryNoNote;
+	}
+};
+var _user$project$Main$Start = {ctor: 'Start'};
+var _user$project$Main$updateState = function (model) {
+	var _p2 = model.state;
+	switch (_p2.ctor) {
+		case 'NoteFadingIn':
+			return (_elm_lang$core$Native_Utils.cmp(model.aniTimeFade, 0.4) > -1) ? _user$project$Main$StationaryWithNote : _user$project$Main$NoteFadingIn;
+		case 'NoteFadingOut':
+			return (_elm_lang$core$Native_Utils.cmp(model.aniTimeFade, 0.4) > -1) ? _user$project$Main$StationaryNoNote : _user$project$Main$NoteFadingOut;
+		case 'ExpandingContacts':
+			return (_elm_lang$core$Native_Utils.cmp(model.aniTimeExpand, 20) > -1) ? _user$project$Main$StationaryNoNote : _user$project$Main$ExpandingContacts;
+		case 'StationaryWithNote':
+			return _user$project$Main$StationaryWithNote;
+		case 'StationaryNoNote':
+			return _user$project$Main$StationaryNoNote;
+		default:
+			return _user$project$Main$Start;
+	}
+};
+var _user$project$Main$buttonPress = function (oldState) {
+	var _p3 = oldState;
+	switch (_p3.ctor) {
+		case 'Start':
+			return _user$project$Main$Start;
+		case 'ExpandingContacts':
+			return _user$project$Main$ExpandingContacts;
+		case 'StationaryNoNote':
+			return _user$project$Main$NoteFadingIn;
+		case 'NoteFadingIn':
+			return _user$project$Main$NoteFadingIn;
+		case 'NoteFadingOut':
+			return _user$project$Main$NoteFadingOut;
+		default:
+			return _user$project$Main$StationaryWithNote;
+	}
+};
+var _user$project$Main$xPress = function (oldState) {
+	var _p4 = oldState;
+	switch (_p4.ctor) {
+		case 'Start':
+			return _user$project$Main$Start;
+		case 'ExpandingContacts':
+			return _user$project$Main$ExpandingContacts;
+		case 'StationaryWithNote':
+			return _user$project$Main$NoteFadingOut;
+		case 'NoteFadingOut':
+			return _user$project$Main$NoteFadingOut;
+		case 'NoteFadingIn':
+			return _user$project$Main$NoteFadingIn;
+		default:
+			return _user$project$Main$StationaryNoNote;
+	}
+};
+var _user$project$Main$update = F2(
+	function (msg, model) {
+		var _p5 = msg;
+		switch (_p5.ctor) {
+			case 'Tick':
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						time: _p5._0,
+						aniTimeFade: function () {
+							var _p6 = model.state;
+							switch (_p6.ctor) {
+								case 'NoteFadingIn':
+									return model.aniTimeFade + 5.0e-2;
+								case 'NoteFadingOut':
+									return model.aniTimeFade + 5.0e-2;
+								default:
+									return 0;
+							}
+						}(),
+						aniTimeExpand: function () {
+							var _p7 = model.state;
+							switch (_p7.ctor) {
+								case 'Start':
+									return 0.5;
+								case 'ExpandingContacts':
+									return model.aniTimeExpand + 5.0e-2;
+								default:
+									return 20;
+							}
+						}(),
+						spiralTheta: function () {
+							var _p8 = model.state;
+							switch (_p8.ctor) {
+								case 'Start':
+									return 0.5;
+								case 'ExpandingContacts':
+									return model.spiralTheta + 5.0e-2;
+								default:
+									return 20;
+							}
+						}(),
+						state: _user$project$Main$updateState(model),
+						noteTransparency: _user$project$Main$updateNoteTransparency(model)
+					});
+			case 'ButtonPress':
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						state: _user$project$Main$buttonPress(model.state)
+					});
+			case 'ContactsPress':
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						state: _user$project$Main$contactsPress(model.state)
+					});
+			default:
+				return _elm_lang$core$Native_Utils.update(
+					model,
+					{
+						state: _user$project$Main$xPress(model.state)
+					});
+		}
+	});
+var _user$project$Main$XPress = {ctor: 'XPress'};
+var _user$project$Main$ButtonPress = {ctor: 'ButtonPress'};
+var _user$project$Main$myShapes = function (model) {
+	return {
+		ctor: '::',
+		_0: A2(
+			_user$project$GraphicSVG$filled,
+			_user$project$GraphicSVG$black,
+			A2(_user$project$GraphicSVG$rect, 250, 128)),
+		_1: {
+			ctor: '::',
+			_0: A2(
+				_user$project$GraphicSVG$filled,
+				A3(_user$project$GraphicSVG$rgb, 253, 255, 219),
+				A2(_user$project$GraphicSVG$rect, 248, 126)),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$GraphicSVG$makeTransparent,
+					0.4,
+					_user$project$GraphicSVG$graphPaper(10)),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$GraphicSVG$move,
+						{ctor: '_Tuple2', _0: 0, _1: -20},
+						_user$project$Main$face4),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$GraphicSVG$move,
+							{ctor: '_Tuple2', _0: 30, _1: -50},
+							A2(
+								_user$project$GraphicSVG$filled,
+								_user$project$GraphicSVG$black,
+								_user$project$GraphicSVG$text(
+									A2(
+										_elm_lang$core$Basics_ops['++'],
+										'ExpandTime ',
+										_user$project$Main$stringOfAniTime(model.aniTimeExpand))))),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$GraphicSVG$scale,
+								A2(
+									_elm_lang$core$Basics$max,
+									_elm_lang$core$Basics$sin(model.time) * _user$project$Main$enlargedSize,
+									_user$project$Main$scaledSize),
+								A2(
+									_user$project$GraphicSVG$move,
+									{ctor: '_Tuple2', _0: 0, _1: 10},
+									A2(_user$project$GraphicSVG$notifyTap, _user$project$Main$ButtonPress, _user$project$Main$face1))),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$GraphicSVG$scale,
+									A2(
+										_elm_lang$core$Basics$max,
+										_elm_lang$core$Basics$sin(model.time - (_user$project$Main$timeShift * 1)) * _user$project$Main$enlargedSize,
+										_user$project$Main$scaledSize),
+									A2(
+										_user$project$GraphicSVG$move,
+										{ctor: '_Tuple2', _0: 26, _1: 15 - 20},
+										_user$project$Main$face2)),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_user$project$GraphicSVG$scale,
+										A2(
+											_elm_lang$core$Basics$max,
+											_elm_lang$core$Basics$sin(model.time - (_user$project$Main$timeShift * 2)) * _user$project$Main$enlargedSize,
+											_user$project$Main$scaledSize),
+										A2(
+											_user$project$GraphicSVG$move,
+											{ctor: '_Tuple2', _0: 26, _1: -15 - 20},
+											_user$project$Main$face3)),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$GraphicSVG$scale,
+											A2(
+												_elm_lang$core$Basics$max,
+												_elm_lang$core$Basics$sin(model.time - (_user$project$Main$timeShift * 3)) * _user$project$Main$enlargedSize,
+												_user$project$Main$scaledSize),
+											A2(
+												_user$project$GraphicSVG$move,
+												{ctor: '_Tuple2', _0: 0, _1: -30 - 20},
+												_user$project$Main$face4)),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$GraphicSVG$scale,
+												A2(
+													_elm_lang$core$Basics$max,
+													_elm_lang$core$Basics$sin(model.time - (_user$project$Main$timeShift * 4)) * _user$project$Main$enlargedSize,
+													_user$project$Main$scaledSize),
+												A2(
+													_user$project$GraphicSVG$move,
+													{ctor: '_Tuple2', _0: -26, _1: -15 - 20},
+													_user$project$Main$face1)),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_user$project$GraphicSVG$scale,
+													A2(
+														_elm_lang$core$Basics$max,
+														_elm_lang$core$Basics$sin(model.time - (_user$project$Main$timeShift * 5)) * _user$project$Main$enlargedSize,
+														_user$project$Main$scaledSize),
+													A2(
+														_user$project$GraphicSVG$move,
+														{ctor: '_Tuple2', _0: -26, _1: 15 - 20},
+														_user$project$Main$face2)),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_user$project$GraphicSVG$makeTransparent,
+														model.noteTransparency,
+														A2(
+															_user$project$GraphicSVG$move,
+															{ctor: '_Tuple2', _0: 0, _1: 35},
+															A2(
+																_user$project$GraphicSVG$filled,
+																_user$project$Main$noteColour,
+																A3(_user$project$GraphicSVG$roundedRect, 80, 20, 5)))),
+													_1: {
+														ctor: '::',
+														_0: A2(
+															_user$project$GraphicSVG$makeTransparent,
+															model.noteTransparency,
+															A2(
+																_user$project$GraphicSVG$move,
+																{ctor: '_Tuple2', _0: -35, _1: 38},
+																A2(
+																	_user$project$GraphicSVG$scale,
+																	0.45,
+																	A2(
+																		_user$project$GraphicSVG$filled,
+																		_user$project$GraphicSVG$black,
+																		_user$project$GraphicSVG$text(_user$project$Main$text1))))),
+														_1: {
+															ctor: '::',
+															_0: A2(
+																_user$project$GraphicSVG$notifyTap,
+																_user$project$Main$XPress,
+																A2(
+																	_user$project$GraphicSVG$makeTransparent,
+																	model.noteTransparency,
+																	A2(
+																		_user$project$GraphicSVG$move,
+																		{ctor: '_Tuple2', _0: 35, _1: 40},
+																		A2(
+																			_user$project$GraphicSVG$rotate,
+																			_elm_lang$core$Basics$degrees(45),
+																			_user$project$Main$closeBoxSymbol)))),
+															_1: {ctor: '[]'}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	};
+};
+var _user$project$Main$view = function (model) {
+	return A3(
+		_user$project$GraphicSVG$collage,
+		250,
+		128,
+		_user$project$Main$myShapes(model));
+};
+var _user$project$Main$ContactsPress = {ctor: 'ContactsPress'};
+var _user$project$Main$Tick = F2(
+	function (a, b) {
+		return {ctor: 'Tick', _0: a, _1: b};
+	});
+var _user$project$Main$main = A2(
+	_user$project$GraphicSVG$gameApp,
+	_user$project$Main$Tick,
+	{model: _user$project$Main$init, view: _user$project$Main$view, update: _user$project$Main$update})();

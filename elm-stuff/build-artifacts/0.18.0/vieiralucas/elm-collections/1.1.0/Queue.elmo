@@ -1,0 +1,36 @@
+var _vieiralucas$elm_collections$Queue$toList = function (_p0) {
+	var _p1 = _p0;
+	return _p1._0;
+};
+var _vieiralucas$elm_collections$Queue$first = function (_p2) {
+	var _p3 = _p2;
+	return _elm_lang$core$List$head(_p3._0);
+};
+var _vieiralucas$elm_collections$Queue$Queue = function (a) {
+	return {ctor: 'Queue', _0: a};
+};
+var _vieiralucas$elm_collections$Queue$empty = _vieiralucas$elm_collections$Queue$Queue(
+	{ctor: '[]'});
+var _vieiralucas$elm_collections$Queue$enq = F2(
+	function (a, _p4) {
+		var _p5 = _p4;
+		return _vieiralucas$elm_collections$Queue$Queue(
+			A2(
+				_elm_lang$core$List$append,
+				_p5._0,
+				{
+					ctor: '::',
+					_0: a,
+					_1: {ctor: '[]'}
+				}));
+	});
+var _vieiralucas$elm_collections$Queue$deq = function (_p6) {
+	var _p7 = _p6;
+	var _p8 = _p7._0;
+	return {
+		ctor: '_Tuple2',
+		_0: _elm_lang$core$List$head(_p8),
+		_1: _vieiralucas$elm_collections$Queue$Queue(
+			A2(_elm_lang$core$List$drop, 1, _p8))
+	};
+};

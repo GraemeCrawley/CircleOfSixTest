@@ -1,0 +1,92 @@
+var _mpizenberg$elm_image_collection$Image$maxSizeAttribute = function (_p0) {
+	var _p1 = _p0;
+	return _elm_lang$html$Html_Attributes$style(
+		{
+			ctor: '::',
+			_0: {ctor: '_Tuple2', _0: 'width', _1: 'auto'},
+			_1: {
+				ctor: '::',
+				_0: {ctor: '_Tuple2', _0: 'height', _1: 'auto'},
+				_1: {
+					ctor: '::',
+					_0: {
+						ctor: '_Tuple2',
+						_0: 'max-width',
+						_1: A2(
+							_elm_lang$core$Basics_ops['++'],
+							_elm_lang$core$Basics$toString(_p1._0),
+							'px')
+					},
+					_1: {
+						ctor: '::',
+						_0: {
+							ctor: '_Tuple2',
+							_0: 'max-height',
+							_1: A2(
+								_elm_lang$core$Basics_ops['++'],
+								_elm_lang$core$Basics$toString(_p1._1),
+								'px')
+						},
+						_1: {ctor: '[]'}
+					}
+				}
+			}
+		});
+};
+var _mpizenberg$elm_image_collection$Image$viewSvg = F2(
+	function (attributes, image) {
+		var svgAttributes = A2(
+			_elm_lang$core$Basics_ops['++'],
+			attributes,
+			{
+				ctor: '::',
+				_0: _elm_lang$svg$Svg_Attributes$xlinkHref(image.url),
+				_1: {
+					ctor: '::',
+					_0: _elm_lang$svg$Svg_Attributes$pointerEvents('none'),
+					_1: {
+						ctor: '::',
+						_0: _elm_lang$svg$Svg_Attributes$width(
+							_elm_lang$core$Basics$toString(image.width)),
+						_1: {
+							ctor: '::',
+							_0: _elm_lang$svg$Svg_Attributes$height(
+								_elm_lang$core$Basics$toString(image.height)),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			});
+		return A2(
+			_elm_lang$svg$Svg$image,
+			svgAttributes,
+			{ctor: '[]'});
+	});
+var _mpizenberg$elm_image_collection$Image$viewImg = F2(
+	function (attributes, image) {
+		var htmlAttributes = {
+			ctor: '::',
+			_0: _mpizenberg$elm_image_collection$Image$maxSizeAttribute(
+				{ctor: '_Tuple2', _0: image.width, _1: image.height}),
+			_1: {
+				ctor: '::',
+				_0: _elm_lang$html$Html_Attributes$src(image.url),
+				_1: attributes
+			}
+		};
+		return A2(
+			_elm_lang$html$Html$img,
+			htmlAttributes,
+			{ctor: '[]'});
+	});
+var _mpizenberg$elm_image_collection$Image$resize = F2(
+	function (_p2, image) {
+		var _p3 = _p2;
+		return _elm_lang$core$Native_Utils.update(
+			image,
+			{width: _p3._0, height: _p3._1});
+	});
+var _mpizenberg$elm_image_collection$Image$Image = F3(
+	function (a, b, c) {
+		return {url: a, width: b, height: c};
+	});

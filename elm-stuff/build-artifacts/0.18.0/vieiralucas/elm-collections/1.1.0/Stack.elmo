@@ -1,0 +1,42 @@
+var _vieiralucas$elm_collections$Stack$toList = function (_p0) {
+	var _p1 = _p0;
+	return _p1._0;
+};
+var _vieiralucas$elm_collections$Stack$top = function (_p2) {
+	var _p3 = _p2;
+	return _elm_lang$core$List$head(_p3._0);
+};
+var _vieiralucas$elm_collections$Stack$Stack = function (a) {
+	return {ctor: 'Stack', _0: a};
+};
+var _vieiralucas$elm_collections$Stack$empty = _vieiralucas$elm_collections$Stack$Stack(
+	{ctor: '[]'});
+var _vieiralucas$elm_collections$Stack$push = F2(
+	function (a, _p4) {
+		var _p5 = _p4;
+		return _vieiralucas$elm_collections$Stack$Stack(
+			{ctor: '::', _0: a, _1: _p5._0});
+	});
+var _vieiralucas$elm_collections$Stack$pop = function (_p6) {
+	var _p7 = _p6;
+	var _p8 = _p7._0;
+	return {
+		ctor: '_Tuple2',
+		_0: _elm_lang$core$List$head(_p8),
+		_1: _vieiralucas$elm_collections$Stack$Stack(
+			A2(_elm_lang$core$List$drop, 1, _p8))
+	};
+};
+var _vieiralucas$elm_collections$Stack$append = F2(
+	function (list, _p9) {
+		var _p10 = _p9;
+		return _vieiralucas$elm_collections$Stack$Stack(
+			A2(
+				_elm_lang$core$Basics_ops['++'],
+				_elm_lang$core$List$reverse(list),
+				_p10._0));
+	});
+var _vieiralucas$elm_collections$Stack$fromList = function (a) {
+	return _vieiralucas$elm_collections$Stack$Stack(
+		_elm_lang$core$List$reverse(a));
+};

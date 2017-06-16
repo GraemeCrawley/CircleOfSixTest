@@ -5,7 +5,7 @@ import GraphicSVG exposing (..)
 --Face1, Face2 until 4 are already variables, 
 myFaces model = [
 
-                face1
+                face4
             --Replace 1 with other numbers upto 4 so far
             ]
 
