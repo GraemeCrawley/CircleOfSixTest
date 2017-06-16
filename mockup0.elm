@@ -8,7 +8,7 @@ main = gameApp Tick { model = init, view = view, update = update }
 
 type State = Start | TopNoteFadingIn | TopNoteFadingOut | RightTopNoteFadingIn | RightTopNoteFadingOut | StationaryNoNote | StationaryTopNote | StationaryRightTopNote
 
-init = { time = 0, state = StationaryNoNote, noteTransparency = 0, aniTimeFade = 0, aniTimeExpand = 0, spiralTheta = 0, circleOfSixX = 0, circleOfSixY = 0, rightTopNoteX = 1000, rightTopNoteY = 1000, topNoteX = 1000, topNoteY = 1000 }
+init = { time = 0, state = StationaryNoNote, topNoteTransparency = 0, rightTopNoteTransparency = 0, aniTimeFade = 0, aniTimeExpand = 0, spiralTheta = 0, circleOfSixX = 0, circleOfSixY = 0, rightTopNoteX = 1000, rightTopNoteY = 1000, topNoteX = 1000, topNoteY = 1000 }
 
 update msg model = case msg of
                     Tick t _     -> { model | time = t 
@@ -19,7 +19,8 @@ update msg model = case msg of
                                                     RightTopNoteFadingOut -> model.aniTimeFade + 0.05
                                                     _ -> 0
                                         , state = updateState model
-                                        , noteTransparency = updateNoteTransparency model
+                                        , topNoteTransparency = updateTopNoteTransparency model
+                                        , rightTopNoteTransparency = updateRightTopNoteTransparency model
                                         , topNoteX = case model.state of
                                                     TopNoteFadingIn -> 0
                                                     TopNoteFadingOut -> 0
@@ -75,12 +76,16 @@ updateState model = case model.state of
                         Start -> Start
 
 
-updateNoteTransparency model = case model.state of
-                        TopNoteFadingIn -> model.noteTransparency + 0.1
-                        TopNoteFadingOut -> model.noteTransparency - 0.1
-                        RightTopNoteFadingIn -> model.noteTransparency + 0.1
-                        RightTopNoteFadingOut -> model.noteTransparency - 0.1
-                        _ -> model.noteTransparency
+updateTopNoteTransparency model = case model.state of
+                        TopNoteFadingIn -> model.topNoteTransparency + 0.1
+                        TopNoteFadingOut -> model.topNoteTransparency - 0.1
+                        _ -> model.topNoteTransparency
+
+updateRightTopNoteTransparency model = case model.state of
+                        RightTopNoteFadingIn -> model.rightTopNoteTransparency + 0.1
+                        RightTopNoteFadingOut -> model.rightTopNoteTransparency - 0.1
+
+                        _ -> model.rightTopNoteTransparency
 
 
 {- UNNECESSARY FOR NOW
@@ -112,7 +117,7 @@ buttonPressTop oldState = case oldState of
                         RightTopNoteFadingIn -> RightTopNoteFadingIn
                         RightTopNoteFadingOut -> RightTopNoteFadingOut
                         StationaryTopNote -> TopNoteFadingOut
-                        StationaryRightTopNote -> StationaryTopNote
+                        StationaryRightTopNote -> StationaryRightTopNote
 
 buttonPressRightTop oldState = case oldState of
                         Start -> Start
@@ -122,7 +127,7 @@ buttonPressRightTop oldState = case oldState of
                         TopNoteFadingIn -> TopNoteFadingIn
                         TopNoteFadingOut -> TopNoteFadingOut
                         StationaryRightTopNote -> RightTopNoteFadingOut
-                        StationaryTopNote -> StationaryRightTopNote
+                        StationaryTopNote -> StationaryTopNote
 
 xPressTop oldState = case oldState of
                         Start -> Start
@@ -196,16 +201,13 @@ myShapes model = [-- BACKGROUND
                     
             ]
                 |> move (0,-20)
-            , text ("ExpandTime " ++ (stringOfAniTime model.aniTimeExpand))
-                |> filled black
-                |> move (30, -50)
             -- Top
             , group [
                 circle 11
                     |> filled backgroundPerson
                 , face1
                 , myCircleOutline
-                    |> makeTransparent model.noteTransparency
+                    |> makeTransparent model.topNoteTransparency
                     
             ]
                 |> notifyTap ButtonPressTop
@@ -218,6 +220,7 @@ myShapes model = [-- BACKGROUND
                     |> filled backgroundPerson
                 , face2
                 , myCircleOutline
+                    |> makeTransparent model.rightTopNoteTransparency
                     
             ]
                 |> notifyTap ButtonPressRightTop
@@ -277,7 +280,7 @@ myShapes model = [-- BACKGROUND
                     |> move (35, 40)
                     |> notifyTap XPressTop
                 ]
-                    |> makeTransparent model.noteTransparency
+                    |> makeTransparent model.topNoteTransparency
                     |> move (model.topNoteX, model.topNoteY)
             -- Right Top Note
            , group [
@@ -293,9 +296,11 @@ myShapes model = [-- BACKGROUND
                     |> move (35, 40)
                     |> notifyTap XPressRightTop
                 ]
-                    |> makeTransparent model.noteTransparency
+                    |> makeTransparent model.rightTopNoteTransparency
                     |> move (model.rightTopNoteX, model.rightTopNoteY)
-
+            , text ("Animation Time " ++ (stringOfAniTime model.aniTimeFade))
+                |> filled black
+                |> move (30, -50)
             ]   -- END OF MODEL
 
 -- DEFINING VARIABLES
