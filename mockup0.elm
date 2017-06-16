@@ -6,59 +6,82 @@ main = gameApp Tick { model = init, view = view, update = update }
 
 -- MODEL
 
-type State = Start | ExpandingContacts | NoteFadingIn | NoteFadingOut | StationaryNoNote | StationaryWithNote
+type State = Start | TopNoteFadingIn | TopNoteFadingOut | RightTopNoteFadingIn | RightTopNoteFadingOut | StationaryNoNote | StationaryTopNote | StationaryRightTopNote
 
-init = { time = 0, state = StationaryNoNote, noteTransparency = 0, aniTimeFade = 0, aniTimeExpand = 0, spiralTheta = 0, circleOfSixX = 0, circleOfSixY = 0 }
+init = { time = 0, state = StationaryNoNote, noteTransparency = 0, aniTimeFade = 0, aniTimeExpand = 0, spiralTheta = 0, circleOfSixX = 0, circleOfSixY = 0, rightTopNoteX = 1000, rightTopNoteY = 1000, topNoteX = 1000, topNoteY = 1000 }
 
 update msg model = case msg of
                     Tick t _     -> { model | time = t 
                                         , aniTimeFade = case model.state of
-                                                    NoteFadingIn -> model.aniTimeFade + 0.05
-                                                    NoteFadingOut -> model.aniTimeFade + 0.05
+                                                    TopNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    TopNoteFadingOut -> model.aniTimeFade + 0.05
+                                                    RightTopNoteFadingIn -> model.aniTimeFade + 0.05
+                                                    RightTopNoteFadingOut -> model.aniTimeFade + 0.05
                                                     _ -> 0
-                                        , aniTimeExpand = case model.state of
-                                                    Start -> 0.5
-                                                    ExpandingContacts -> model.aniTimeExpand + 0.05
-                                                    _ -> 20
-                                        , spiralTheta = case model.state of
-                                                    Start -> 0.5
-                                                    ExpandingContacts -> model.spiralTheta + 0.05
-                                                    _ -> 20
                                         , state = updateState model
                                         , noteTransparency = updateNoteTransparency model
+                                        , topNoteX = case model.state of
+                                                    TopNoteFadingIn -> 0
+                                                    TopNoteFadingOut -> 0
+                                                    StationaryTopNote -> 0
+                                                    _ -> 1000
+                                        , topNoteY = case model.state of
+                                                    TopNoteFadingIn -> 0
+                                                    TopNoteFadingOut -> 0
+                                                    StationaryTopNote -> 0
+                                                    _ -> 1000
+                                        , rightTopNoteX = case model.state of
+                                                    RightTopNoteFadingIn -> 0
+                                                    RightTopNoteFadingOut -> 0
+                                                    StationaryRightTopNote -> 0
+                                                    _ -> 1000
+                                        , rightTopNoteY = case model.state of
+                                                    RightTopNoteFadingIn -> 0
+                                                    RightTopNoteFadingOut -> 0
+                                                    StationaryRightTopNote -> 0
+                                                    _ -> 1000
+
                                         {- UNECESSARY FOR NOW
                                         --, circleOfSixX = updateExpandingContactsX model
                                         --, circleOfSixY = updateExpandingContactsY model
                                         -}
                                         }
-                    ButtonPress -> { model | state = buttonPress model.state 
+                    ButtonPressTop -> { model | state = buttonPressTop model.state 
                                     }
-                    ContactsPress -> { model | state = contactsPress model.state 
+                    ButtonPressRightTop -> { model | state = buttonPressRightTop model.state 
                                     }
-
-                    XPress -> { model | state = xPress model.state 
+                    XPressTop -> { model | state = xPressTop model.state 
+                                    }
+                    XPressRightTop -> { model | state = xPressRightTop model.state 
                                     }
 
 
 updateState model = case model.state of
-                        NoteFadingIn -> if model.aniTimeFade >= 0.4
-                                    then StationaryWithNote
-                                    else NoteFadingIn
-                        NoteFadingOut -> if model.aniTimeFade >= 0.4
+                        TopNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryTopNote
+                                    else TopNoteFadingIn
+                        TopNoteFadingOut -> if model.aniTimeFade >= 0.4
                                     then StationaryNoNote
-                                    else NoteFadingOut
-                        ExpandingContacts -> if model.aniTimeExpand >= 20
+                                    else TopNoteFadingOut
+                        RightTopNoteFadingIn -> if model.aniTimeFade >= 0.4
+                                    then StationaryRightTopNote
+                                    else RightTopNoteFadingIn
+                        RightTopNoteFadingOut -> if model.aniTimeFade >= 0.4
                                     then StationaryNoNote
-                                    else ExpandingContacts
-                        StationaryWithNote -> StationaryWithNote
+                                    else RightTopNoteFadingOut
+                        StationaryTopNote -> StationaryTopNote
+                        StationaryRightTopNote -> StationaryRightTopNote
                         StationaryNoNote -> StationaryNoNote
                         Start -> Start
 
 
 updateNoteTransparency model = case model.state of
-                        NoteFadingIn -> model.noteTransparency + 0.1
-                        NoteFadingOut -> model.noteTransparency - 0.1
+                        TopNoteFadingIn -> model.noteTransparency + 0.1
+                        TopNoteFadingOut -> model.noteTransparency - 0.1
+                        RightTopNoteFadingIn -> model.noteTransparency + 0.1
+                        RightTopNoteFadingOut -> model.noteTransparency - 0.1
                         _ -> model.noteTransparency
+
 
 {- UNNECESSARY FOR NOW
 updateExpandingContactsX model = case model.state of
@@ -76,32 +99,49 @@ updateExpandingContactsY model = case model.state of
 
 -- UPDATE
 type Msg = Tick Float GetKeyState
-        | ContactsPress
-        | ButtonPress
-        | XPress
+        | ButtonPressTop
+        | XPressTop
+        | ButtonPressRightTop
+        | XPressRightTop
 
-buttonPress oldState = case oldState of
+buttonPressTop oldState = case oldState of
                         Start -> Start
-                        ExpandingContacts -> ExpandingContacts
-                        StationaryNoNote -> NoteFadingIn
-                        NoteFadingIn -> NoteFadingIn
-                        NoteFadingOut -> NoteFadingOut
-                        StationaryWithNote -> StationaryWithNote
+                        StationaryNoNote -> TopNoteFadingIn
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        RightTopNoteFadingIn -> RightTopNoteFadingIn
+                        RightTopNoteFadingOut -> RightTopNoteFadingOut
+                        StationaryTopNote -> TopNoteFadingOut
+                        StationaryRightTopNote -> StationaryTopNote
 
-xPress oldState = case oldState of
+buttonPressRightTop oldState = case oldState of
                         Start -> Start
-                        ExpandingContacts -> ExpandingContacts
-                        StationaryWithNote -> NoteFadingOut
-                        NoteFadingOut -> NoteFadingOut
-                        NoteFadingIn -> NoteFadingIn
+                        StationaryNoNote -> RightTopNoteFadingIn
+                        RightTopNoteFadingIn -> RightTopNoteFadingIn
+                        RightTopNoteFadingOut -> RightTopNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        StationaryRightTopNote -> RightTopNoteFadingOut
+                        StationaryTopNote -> StationaryRightTopNote
+
+xPressTop oldState = case oldState of
+                        Start -> Start
+                        StationaryTopNote -> TopNoteFadingOut
+                        StationaryRightTopNote -> StationaryRightTopNote
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
+                        RightTopNoteFadingIn -> RightTopNoteFadingIn
+                        RightTopNoteFadingOut -> RightTopNoteFadingOut
                         StationaryNoNote -> StationaryNoNote
 
-contactsPress oldState = case oldState of
-                        Start -> ExpandingContacts
-                        ExpandingContacts -> ExpandingContacts
-                        StationaryWithNote -> StationaryWithNote
-                        NoteFadingOut -> NoteFadingOut
-                        NoteFadingIn -> NoteFadingIn
+xPressRightTop oldState = case oldState of
+                        Start -> Start
+                        StationaryRightTopNote -> RightTopNoteFadingOut
+                        StationaryTopNote -> StationaryTopNote
+                        RightTopNoteFadingOut -> RightTopNoteFadingOut
+                        RightTopNoteFadingIn -> RightTopNoteFadingIn
+                        TopNoteFadingOut -> TopNoteFadingOut
+                        TopNoteFadingIn -> TopNoteFadingIn
                         StationaryNoNote -> StationaryNoNote
 
 
@@ -146,52 +186,117 @@ myShapes model = [-- BACKGROUND
              rect 250 128 |> filled black
            , rect 248 126 |> filled (rgb 253 255 219)
            , graphPaper 10 |> makeTransparent 0.4
-           , face4
+            -- Center Face
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face4
+                , myCircleOutline
+                    |> makeTransparent 0
+                    
+            ]
                 |> move (0,-20)
             , text ("ExpandTime " ++ (stringOfAniTime model.aniTimeExpand))
                 |> filled black
                 |> move (30, -50)
             -- Top
-           , face1
-               |> notifyTap ButtonPress
-               |> move (0,(10))         --speed, % of the wheel
-               |> scale (max(sin model.time*enlargedSize) scaledSize)
+            , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face1
+                , myCircleOutline
+                    |> makeTransparent model.noteTransparency
+                    
+            ]
+                |> notifyTap ButtonPressTop
+                |> move (0,(10))         --speed, % of the wheel
+                |> scale (max(sin model.time*enlargedSize) scaledSize)
+           
             -- Right Top
-           , face2
-               |> move (26,(15-20))
-               |> scale (max(sin (model.time-timeShift*1)*enlargedSize) scaledSize)
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face2
+                , myCircleOutline
+                    
+            ]
+                |> notifyTap ButtonPressRightTop
+                |> move (26,(15-20))
+                |> scale (max(sin (model.time-timeShift*1)*enlargedSize) scaledSize)
             -- Right Bottom
-           , face3
-               |> move (26,(-15-20))
-               |> scale (max(sin (model.time-timeShift*2)*enlargedSize) scaledSize)
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face3
+                , myCircleOutline
+                    
+            ]
+                |> move (26,(-15-20))
+                |> scale (max(sin (model.time-timeShift*2)*enlargedSize) scaledSize)
             -- Bottom
-           , face4
-               |> move (0,(-30-20))
-               |> scale (max(sin (model.time-timeShift*3)*enlargedSize) scaledSize)
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face4
+                , myCircleOutline
+                    
+            ]
+                |> move (0,(-30-20))
+                |> scale (max(sin (model.time-timeShift*3)*enlargedSize) scaledSize)
             -- Left Top
-           , face1
-               |> move (-26,(-15-20))
-               |> scale (max(sin (model.time-timeShift*4)*enlargedSize) scaledSize)
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face1
+                , myCircleOutline
+                    
+            ]
+                |> move (-26,(-15-20))
+                |> scale (max(sin (model.time-timeShift*4)*enlargedSize) scaledSize)
             -- Left Bottom
-           , face2
-               |> move (-26,(15-20))
-               |> scale (max(sin (model.time-timeShift*5)*enlargedSize) scaledSize)
-           , roundedRect 80 20 5
-               |> filled noteColour
-               |> move (0, 35)
-               |> makeTransparent model.noteTransparency
-           , text text1
-               |> filled black
-               |> scale 0.45
-               |> move (-35 , 38)
-               |> makeTransparent model.noteTransparency
-           , closeBoxSymbol
-               |> rotate (degrees 45)
-               |> move (35, 40)
-               |> makeTransparent model.noteTransparency
-               |> notifyTap XPress
-           ]
-                -- END OF MODEL
+           , group [
+                circle 11
+                    |> filled backgroundPerson
+                , face2
+                , myCircleOutline
+                    
+            ]
+                |> move (-26,(15-20))
+                |> scale (max(sin (model.time-timeShift*5)*enlargedSize) scaledSize)
+           -- Top Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text1
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressTop
+                ]
+                    |> makeTransparent model.noteTransparency
+                    |> move (model.topNoteX, model.topNoteY)
+            -- Right Top Note
+           , group [
+                roundedRect 80 20 5
+                    |> filled noteColour
+                    |> move (0, 35)
+                , text text2
+                    |> filled black
+                    |> scale 0.45
+                    |> move (-35 , 38)
+                , closeBoxSymbol
+                    |> rotate (degrees 45)
+                    |> move (35, 40)
+                    |> notifyTap XPressRightTop
+                ]
+                    |> makeTransparent model.noteTransparency
+                    |> move (model.rightTopNoteX, model.rightTopNoteY)
+
+            ]   -- END OF MODEL
 
 -- DEFINING VARIABLES
 
@@ -199,7 +304,7 @@ positive x = if x > 0 then x else 0
 
 
 text1 = "hello1"
-
+text2 = "hello2"
 
 profilePerson = myCircle
 
@@ -227,10 +332,13 @@ backgroundPerson = rgb 200 80 75
 contactPersonColour = rgb 67 157 145 
 noteColour = rgb 250 166 106   
 
+myCircleOutline = circle 11
+                    |> outlined (solid 1) orange
+
 myCircle = group [circle 10
-                         |> filled backgroundPerson,
+                         |> filled backgroundPerson
                 -- Main body
-                curve (0,0) [Pull (5,10) (10,0)]
+                , curve (0,0) [Pull (5,10) (10,0)]
                 |> filled contactPersonColour
                 |> move (-5,-8),
                 -- Head
@@ -347,6 +455,7 @@ face1 = group [
                       |> scale 0.4
 
                    ] |> scale faceScale --Scale the whole face 
+                    |> move (0,1)
 
 face2 = group [
               --THIS IS THE WHOLE FACE
@@ -401,6 +510,7 @@ face2 = group [
                       |> scale 0.4
 
                    ] |> scale faceScale --Scale the whole face 
+                   |> move (0,1)
 
 face3 = group [
               --THIS IS THE WHOLE FACE
@@ -454,6 +564,7 @@ face3 = group [
                       |> move (0,-40)
                       |> scale 0.4
                    ] |> scale faceScale --Scale the whole face 
+                    |> move (0,1)
 
 face4 = group [
               --THIS IS THE WHOLE FACE
@@ -504,7 +615,8 @@ face4 = group [
                       |> outlined (solid 3) red
                       |> move (0,-40)
                       |> scale 0.4
-                   ] |> scale faceScale --Scale the whole face 
+                   ] |> scale faceScale --Scale the whole face
+                 
 
 
 
@@ -662,7 +774,7 @@ hair3b = group [
                     |> filled highlights
                     |> move (30,-40)
                 , rect 30 150 
-                    |> filled white
+                    |> filled backgroundPerson
                     |> move (0,-50)
 
 
